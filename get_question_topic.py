@@ -5,6 +5,7 @@ if the combined key words appears in more than one questions then remove these q
 from itertools import chain, combinations
 import pandas as pd
 import spacy
+import ast
 import re
 import os
 
@@ -184,7 +185,15 @@ def rm_questions_from_key_words(df, n):
 
     
 def main():
-    df_input = pd.read_csv('NextSteps_question.csv', sep='\t')
+
+    # output dir
+    os.makedirs('output', exist_ok=True)
+
+    # input
+    #study = 'NextSteps'
+    #study = 'US'
+    study = 'MCS'
+    df_input = pd.read_csv('input_questions/' + study + '_question.csv', sep='\t')
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
        'QuestionGroupName', 'QuestionGroupLabel']
@@ -288,7 +297,13 @@ def main():
     # Fill column with 0 and update the DataFrame
     final_df_summary['after_counts'] = final_df_summary['after_counts'].fillna(0)
     # output
-    final_df_summary.to_csv(os.path.join('output', 'key_words_summary' + '_new' + '.tsv'), sep='\t', index=False)
+    final_df_summary.to_csv(os.path.join('output', 'key_words_summary_' + study + '.tsv'), sep='\t', index=False)
+    
+    # output keyword-topic pair 
+    #by_study_dir = 'output/KeyWords_Topic_by_study'
+    # ast.literal_eval(x)
+    final_df_summary['KeyWords'] = final_df_summary['words_removed_count'].apply(lambda x: next(iter(x)))
+    final_df_summary[['KeyWords', 'topic']].to_csv(os.path.join('output', 'KeyWords_Topic_' + study + '.tsv'), sep='\t', index=False)
     
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',

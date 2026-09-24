@@ -1,0 +1,1270 @@
+KeyWords	topic
+('age', 'household', 'people', 'help', 'live')	101_demographics
+('date', 'need', 'birth', 'person', 'survey')	101_demographics
+('come', 'spend', 'time', 'country', 'live')	101_demographics
+('date', 'know', 'birth', 'child', 'answer')	101_demographics
+('address', 'move', 'year', 'month')	101_demographics
+('choose', 'home', 'prefer', 'stay')	101_demographics
+('country', 'birth', 'citizen', 'citizenship')	101_demographics
+('know', 'answer', 'interview')	101_demographics
+('live', 'mother')	101_demographics
+('father', 'live')	101_demographics
+('journey', 'trip', 'day', 'count', 'return')	102_housing_and_local_environment
+('People', 'agree', 'statement', 'disagree', 'neighbourhood')	102_housing_and_local_environment
+('desk', 'household', 'work', 'think', 'space')	102_housing_and_local_environment
+('agree', 'statement', 'disagree', 'neighbourhood', 'people')	102_housing_and_local_environment
+('buy', 'accommodation', 'household', 'rent', 'mortgage')	102_housing_and_local_environment
+('borrow', 'property', 'addition', 'mortgage', 'take')	102_housing_and_local_environment
+('sell', 'owe', 'expect', 'vehicle(s', 'price')	102_housing_and_local_environment
+('attack', 'colour', 'race', 'area', 'insult')	102_housing_and_local_environment
+('child', 'answer', 'space', 'question', 'facility')	102_housing_and_local_environment
+('situation', 'move', 'housing', 'question')	102_housing_and_local_environment
+('reason', '1st', 'think', 'person')	102_housing_and_local_environment
+('space', 'accommodation', 'use')	102_housing_and_local_environment
+('year', 'run', 'mortgage')	102_housing_and_local_environment
+('think', 'month', 'scale')	102_housing_and_local_environment
+('reason', 'area', 'relate')	102_housing_and_local_environment
+('education', 'reason', 'relate')	102_housing_and_local_environment
+('total', 'mortgage', 'loan')	102_housing_and_local_environment
+('employment', 'reason', 'relate')	102_housing_and_local_environment
+('reason', 'family', 'relate')	102_housing_and_local_environment
+('housing', 'reason', 'relate')	102_housing_and_local_environment
+('journey', 'use', 'work')	102_housing_and_local_environment
+('place(s', 'work', 'week')	102_housing_and_local_environment
+('people', 'reason', 'household')	102_housing_and_local_environment
+('mortgage', 'loan')	102_housing_and_local_environment
+('address', 'live')	102_housing_and_local_environment
+('vehicle', 'company')	102_housing_and_local_environment
+('doctor', 'health', 'professional', 'tell', 'condition')	103_physical_health
+('medication', 'affect', 'system', 'receive', 'taking')	103_physical_health
+('catch', 'illness', 'receive', 'coronavirus', 'risk')	103_physical_health
+('complete', 'health', 'tell', 'condition', 'survey')	103_physical_health
+('doctor', 'health', 'condition', 'have', 'diagnose')	103_physical_health
+('health', 'have', 'coronavirus', 'return', 'recover')	103_physical_health
+('tell', 'follow', 'people', 'coronavirus', 'live')	103_physical_health
+('go', 'day', 'activity', 'lot', 'item')	103_physical_health
+('age', 'follow', 'person', 'coronavirus', 'test')	103_physical_health
+('age', 'result', 'receive', 'coronavirus', 'test')	103_physical_health
+('coronavirus', 'cause', 'symptom', 'experience')	103_physical_health
+('receive', 'result', 'coronavirus', 'test')	103_physical_health
+('health', 'result', 'time', 'week')	103_physical_health
+('experience', 'coronavirus', 'symptom', 'week')	103_physical_health
+('type', 'malignancy', 'cancer')	103_physical_health
+('cause', 'symptom', 'experience')	103_physical_health
+('covid-19', 'week', 'contact')	103_physical_health
+('coronavirus', 'result', 'test')	103_physical_health
+('kind', 'access', 'attention')	103_physical_health
+('symptom', 'cause', 'live')	103_physical_health
+('heart', 'age', 'tell')	103_physical_health
+('coronavirus', 'live', 'test')	103_physical_health
+('age', 'tell')	103_physical_health
+('type', 'arthritis')	103_physical_health
+('follow', 'symptom')	103_physical_health
+('coronavirus', 'test')	103_physical_health
+('test', 'time')	103_physical_health
+('answer', 'box', 'item', 'help', 'question')	104_mental_health_and_mental_processes
+('come', 'thing', 'express', 'box', 'feel')	104_mental_health_and_mental_processes
+('problem', 'result', 'time', 'feel', 'week')	104_mental_health_and_mental_processes
+('sickness', 'stomach', 'lot', 'ache', 'headache')	104_mental_health_and_mental_processes
+('teacher', 'child', 'volunteer', 'help', 'parent')	104_mental_health_and_mental_processes
+('feel', 'thing', 'decision', 'make')	104_mental_health_and_mental_processes
+('people', 'pick', 'bully', 'child')	104_mental_health_and_mental_processes
+('fight', 'lot', 'want', 'people')	104_mental_health_and_mental_processes
+('food', 'game', 'pen', 'share')	104_mental_health_and_mental_processes
+('people', 'try', 'care', 'feeling')	104_mental_health_and_mental_processes
+('feel', 'thing', 'play')	104_mental_health_and_mental_processes
+('sleep', 'worry', 'lose')	104_mental_health_and_mental_processes
+('activity', 'enjoy', 'day')	104_mental_health_and_mental_processes
+('feel', 'thing', 'consider')	104_mental_health_and_mental_processes
+('feel', 'overcome', 'difficulty')	104_mental_health_and_mental_processes
+('situation', 'confidence', 'lose')	104_mental_health_and_mental_processes
+('attention', 'finish', 'work')	104_mental_health_and_mental_processes
+('find', 'distract', 'concentrate')	104_mental_health_and_mental_processes
+('school', 'thing', 'home')	104_mental_health_and_mental_processes
+('people', 'like', 'age')	104_mental_health_and_mental_processes
+('cheat', 'accuse', 'lie')	104_mental_health_and_mental_processes
+('people', 'age', 'adult')	104_mental_health_and_mental_processes
+('problem', 'type')	104_mental_health_and_mental_processes
+('confidence', 'lose')	104_mental_health_and_mental_processes
+('problem', 'face')	104_mental_health_and_mental_processes
+('person', 'think')	104_mental_health_and_mental_processes
+('feel', 'week')	104_mental_health_and_mental_processes
+('feel', 'strain')	104_mental_health_and_mental_processes
+('feel', 'hurt')	104_mental_health_and_mental_processes
+('lot', 'worry')	104_mental_health_and_mental_processes
+('squirm', 'fidget')	104_mental_health_and_mental_processes
+('lose', 'temper')	104_mental_health_and_mental_processes
+('thing', 'think')	104_mental_health_and_mental_processes
+('spend', 'day', 'time', 'activity', 'minute')	106_health_behaviour
+('walk', 'day', 'time', 'think', 'minute')	106_health_behaviour
+('tin', 'include', 'day', 'eat', 'week')	106_health_behaviour
+('household', 'eat', 'think', 'food', 'week')	106_health_behaviour
+('household', 'time', 'eat', 'think', 'week')	106_health_behaviour
+('day', 'time', 'activity', 'total', 'week')	106_health_behaviour
+('cigarette', 'smoke', 'include', '-', 'e')	106_health_behaviour
+('access', 'household', 'meal', 'food', 'week')	106_health_behaviour
+('alcohol', 'drink', 'week', 'think', 'contain')	106_health_behaviour
+('activity', 'aerobics', 'bicycling', 'lifting', 'week')	106_health_behaviour
+('beer', 'mean', 'measure', 'glass', 'week')	106_health_behaviour
+('cigarette', 'smoke', 'include', 'day', 'roll')	106_health_behaviour
+('school', 'wake', 'day', 'time', 'morning')	106_health_behaviour
+('bed', 'day', 'habit', 'number', 'question')	106_health_behaviour
+('include', 'day', 'eat', 'potato', 'portion')	106_health_behaviour
+('apple', 'day', 'eat', 'fruit', 'portion')	106_health_behaviour
+('day', 'eat', 'breakfast', 'question', 'week')	106_health_behaviour
+('type', 'milk', 'use', 'tell')	106_health_behaviour
+('e', '-', 'use', 'cigarette')	106_health_behaviour
+('eat', 'type', 'bread')	106_health_behaviour
+('drink', 'take', 'week')	106_health_behaviour
+('sleep', 'trouble', 'month')	106_health_behaviour
+('week', 'minute', 'walk')	106_health_behaviour
+('sleep', 'school', 'time')	106_health_behaviour
+('drink', 'day')	106_health_behaviour
+('day', 'week')	106_health_behaviour
+('fall', 'week')	106_health_behaviour
+('sleep', 'month')	106_health_behaviour
+('household', 'think', 'count', 'people', 'live')	107_family_and_social_networks
+('family', 'friend', 'think', 'support', 'live')	107_family_and_social_networks
+('age', 'household', 'people', 'help', 'live')	107_family_and_social_networks
+('arrangement', 'include', 'household', 'people', 'live')	107_family_and_social_networks
+('cohabitation', 'husband', 'include', 'last', 'month')	107_family_and_social_networks
+('club', 'activity', 'box', 'guide', 'observance')	107_family_and_social_networks
+('stay', 'child(ren', 'outbreak', 'think', 'coronavirus')	107_family_and_social_networks
+('explain', 'thing', 'child', 'follow', 'number')	107_family_and_social_networks
+('look', 'hour', 'spend', 'think', 'week')	107_family_and_social_networks
+('summer', 'school', 'shut', 'lockdown', 'holiday')	107_family_and_social_networks
+('hour', 'home', 'spend', 'childcare', 'week')	107_family_and_social_networks
+('age', 'child', 'enrol', 'parent', 'live')	107_family_and_social_networks
+('activity', 'answer', 'number', 'card', 'want')	107_family_and_social_networks
+('date', 'know', 'birth', 'child', 'answer')	107_family_and_social_networks
+('degree', 'point', 'represent', 'describe', 'consider')	107_family_and_social_networks
+('cooking', 'housework', 'laundry', 'clean', 'week')	107_family_and_social_networks
+('responsibility', 'household', 'member', 'care', 'share')	107_family_and_social_networks
+('carer', 'centre', 'care', 'mention', 'support')	107_family_and_social_networks
+('look', 'People', 'people', 'help', 'live')	107_family_and_social_networks
+('husband', 'example', 'friend', 'help', 'live')	107_family_and_social_networks
+('include', 'father', 'child', 'interview', 'live')	107_family_and_social_networks
+('household', 'child(ren', 'outbreak', 'coronavirus', 'live')	107_family_and_social_networks
+('home', 'relationship', 'child(ren', 'change', 'policy')	107_family_and_social_networks
+('People', 'household', 'friend', 'member', 'meet')	107_family_and_social_networks
+('family', 'phone', 'speak', 'friend', 'live')	107_family_and_social_networks
+('time', 'quarrel', 'month', 'child', 'parent')	107_family_and_social_networks
+('chat', 'example', 'friend', 'engage', 'live')	107_family_and_social_networks
+('tell', 'disability', 'illness', 'condition', 'nature')	107_family_and_social_networks
+('app', 'interact', '-', 'friend', 'week')	107_family_and_social_networks
+('child', 'month', 'matter', 'talk', 'parent')	107_family_and_social_networks
+('discuss', 'terminate', 'separation', 'divorce', 'consider')	107_family_and_social_networks
+('contact', 'email', 'telephone', 'daughter', 'son')	107_family_and_social_networks
+('partner', 'year', 'couple', 'month', 'live')	107_family_and_social_networks
+('child(ren', 'time', 'child', 'think', 'take')	107_family_and_social_networks
+('age', 'child', 'daughter', 'son', 'live')	107_family_and_social_networks
+('door', 'life', 'daughter', 'take', 'son')	107_family_and_social_networks
+('outbreak', 'think', 'pandemic', 'coronavirus', 'live')	107_family_and_social_networks
+('family', 'friend', 'meet', 'live', 'week')	107_family_and_social_networks
+('app', 'content', 'image', 'medium', 'video')	107_family_and_social_networks
+('housework', 'day', 'caring', 'share', 'view')	107_family_and_social_networks
+('child', 'compare', 'coronavirus', 'support', 'week')	107_family_and_social_networks
+('contact', 'visit', 'child(ren', 'think', 'week')	107_family_and_social_networks
+('day', 'shopping', 'task', 'follow', 'grocery')	107_family_and_social_networks
+('child(ren', 'education', 'life', 'decision', 'relate')	107_family_and_social_networks
+('night', 'stay', 'child', 'think', 'week')	107_family_and_social_networks
+('hour', 'type', 'care', 'receive', 'week')	107_family_and_social_networks
+('look', 'hour', 'spend', 'thing', 'week')	107_family_and_social_networks
+('relationship', 'day', 'child(ren', 'describe', 'parent')	107_family_and_social_networks
+('internet', 'access', 'household', 'home')	107_family_and_social_networks
+('partner', 'think', 'nerve', 'week')	107_family_and_social_networks
+('family', 'relative', 'need', 'visit')	107_family_and_social_networks
+('day', 'eat', 'meal', 'live')	107_family_and_social_networks
+('door', 'time', 'think', 'take')	107_family_and_social_networks
+('contact', 'outbreak', 'think', 'coronavirus')	107_family_and_social_networks
+('kind', 'receive', 'help')	107_family_and_social_networks
+('age', 'live', 'child')	107_family_and_social_networks
+('second', 'live', 'child')	107_family_and_social_networks
+('status', 'change', 'interview')	107_family_and_social_networks
+('marry', 'regret', 'live')	107_family_and_social_networks
+('relationship', 'day', 'child(ren')	107_family_and_social_networks
+('device', 'video', 'week')	107_family_and_social_networks
+('household', 'parent', 'live')	107_family_and_social_networks
+('look', 'day', 'child')	107_family_and_social_networks
+('child(ren', 'nerve', 'month')	107_family_and_social_networks
+('receive', 'support', 'child')	107_family_and_social_networks
+('school', 'trip', 'child')	107_family_and_social_networks
+('go', 'partner', 'spouse')	107_family_and_social_networks
+('year', 'couple', 'live')	107_family_and_social_networks
+('look', 'think', 'grandchild(ren')	107_family_and_social_networks
+('smartphone', 'type', 'use')	107_family_and_social_networks
+('iron', 'washing', 'day')	107_family_and_social_networks
+('look', 'apply', 'cross')	107_family_and_social_networks
+('stream', 'internet', 'use')	107_family_and_social_networks
+('family', 'support', 'live')	107_family_and_social_networks
+('support', 'pay', 'child')	107_family_and_social_networks
+('partner', 'live')	107_family_and_social_networks
+('device', 'week')	107_family_and_social_networks
+('internet', 'use')	107_family_and_social_networks
+('age', 'live')	107_family_and_social_networks
+('help', 'household')	107_family_and_social_networks
+('status', 'change')	107_family_and_social_networks
+('day', 'friend')	107_family_and_social_networks
+('quarrel', 'partner')	107_family_and_social_networks
+('help', 'homework')	107_family_and_social_networks
+('think', 'child')	107_family_and_social_networks
+('step', 'child')	107_family_and_social_networks
+('day', 'cooking')	107_family_and_social_networks
+('household', 'think')	107_family_and_social_networks
+('use', 'internet')	107_family_and_social_networks
+('day', 'job')	107_family_and_social_networks
+('gardening', 'day')	107_family_and_social_networks
+('cleaning', 'day')	107_family_and_social_networks
+('following', 'week')	107_family_and_social_networks
+('partner', 'month')	107_family_and_social_networks
+('tell', 'month', 'time', 'education', 'period')	108_education
+('start', 'autumn', 'school', 'college', 'attend')	108_education
+('relation', 'following', 'rate', 'concern', 'attend')	108_education
+('school', 'college', 'offer', 'session', 'attend')	108_education
+('hour', 'half', 'school', 'day', 'attend')	108_education
+('home', 'school', 'work', 'think', 'situation')	108_education
+('need', 'school', 'following', 'feel', 'support')	108_education
+('day', 'employer', 'finish', 'course', 'evening')	108_education
+('job', 'time', 'education', 'leave', 'pay')	108_education
+('job', 'education', 'interview', 'count', 'holiday')	108_education
+('family', 'spend', 'time', 'member', 'help')	108_education
+('lesson', 'provide', 'assignment', 'line', 'video')	108_education
+('app', 'learn', 'book', 'website', 'tutoring')	108_education
+('lesson', 'provide', 'time', 'meeting', 'live')	108_education
+('age', 'college', 'child', 'enrol', 'parent')	108_education
+('hour', 'term', 'spend', 'time', 'homework')	108_education
+('tell', 'school', 'information', 'child', 'use')	108_education
+('day', 'time', 'homework', 'evening', 'week')	108_education
+('school', 'thing', 'following', 'feel', 'attend')	108_education
+('need', 'computer', 'work', 'laptop', 'tablet')	108_education
+('school', 'college', 'day', 'attend', 'week')	108_education
+('problem', 'health', 'need', 'disability', 'consider')	108_education
+('complete', 'school', 'send', 'check', 'upload')	108_education
+('home', 'school', 'work', 'think', 'week')	108_education
+('end', 'education', 'period', 'time')	108_education
+('qualification', 'gain', 'education', 'time')	108_education
+('school', 'invite', 'attend', 'week')	108_education
+('school', 'information', 'use', 'tell')	108_education
+('school', 'state', 'fee', 'pay')	108_education
+('laptop', 'computer', 'tablet', 'work')	108_education
+('school', 'following', 'feel', 'attend')	108_education
+('education', 'period', 'time')	108_education
+('school', 'attend', 'week')	108_education
+('school', 'homework', 'set')	108_education
+('check', 'attend', 'child')	108_education
+('home', 'homework', 'help')	108_education
+('school', 'report', 'detail')	108_education
+('home', 'school', 'work')	108_education
+('support', 'plan', 'authority')	108_education
+('school', 'person', 'attend')	108_education
+('school', 'college', 'attend')	108_education
+('school', 'leave')	108_education
+('report', 'detail')	108_education
+('school', 'time')	108_education
+('school', 'offer')	108_education
+('tell', 'household', 'work', 'think', 'live')	109_employment_and_income
+('job', 'include', 'activity', 'pay', 'earning')	109_employment_and_income
+('suggest', 'hour', 'tell', 'work', 'answer')	109_employment_and_income
+('self', 'work', 'employ', 'pay', 'week')	109_employment_and_income
+('employment', 'hour', 'include', 'activity', 'week')	109_employment_and_income
+('income', 'pension', 'benefit', 'expect', 'receive')	109_employment_and_income
+('example', 'friend', 'house', 'form', 'help')	109_employment_and_income
+('home', 'job', 'childcare', 'time', 'pay')	109_employment_and_income
+('complete', 'case', 'survey', 'note', 'furlough')	109_employment_and_income
+('look', 'government', 'scheme', 'pay', 'week')	109_employment_and_income
+('job', 'sort', 'provide', 'work', 'describe')	109_employment_and_income
+('job', 'time', 'think', 'feel', 'week')	109_employment_and_income
+('earn', 'job', 'pence', 'money', 'week')	109_employment_and_income
+('self', 'government', 'employ', 'receive', 'support')	109_employment_and_income
+('payment', 'credit', 'product', 'mortgage', 'holiday')	109_employment_and_income
+('worker', 'work', 'sector', 'situation', 'coronavirus')	109_employment_and_income
+('scale', 'government', 'scheme', 'support', 'chance')	109_employment_and_income
+('come', 'month', 'think', 'like', 'happen')	109_employment_and_income
+('hour', 'job', 'provide', 'share', 'earning')	109_employment_and_income
+('status', 'tell', 'mortgage', 'apply', 'holiday')	109_employment_and_income
+('ask', 'housing', 'find', 'mortgage', 'people')	109_employment_and_income
+('service', 'household', 'bank', 'food', 'week')	109_employment_and_income
+('ask', 'bill', 'card', 'pay', 'electricity')	109_employment_and_income
+('follow', 'spending', 'receipt', 'indicate', 'donation')	109_employment_and_income
+('borrow', 'change', 'like', 'cause', 'consider')	109_employment_and_income
+('employment', 'outbreak', 'think', 'coronavirus', 'pay')	109_employment_and_income
+('job', 'provide', 'earning', 'share', 'pay')	109_employment_and_income
+('account', 'build', 'example', 'bank', 'bill')	109_employment_and_income
+('complete', 'claim', 'application', 'apply', 'survey')	109_employment_and_income
+('start', 'tell', 'job', 'work', 'employer')	109_employment_and_income
+('confirm', 'write', 'employer', 'receive', 'furlough')	109_employment_and_income
+('difficulty', 'expense', 'think', 'bill', 'pay')	109_employment_and_income
+('provide', 'work', 'share', 'industry', 'earning')	109_employment_and_income
+('income', 'tell', 'expect', 'retirement', 'compare')	109_employment_and_income
+('hour', 'spend', 'work', 'organisation', 'week')	109_employment_and_income
+('job', 'work', 'follow', 'period', 'pay')	109_employment_and_income
+('work', 'month', 'think', 'begin', 'pay')	109_employment_and_income
+('look', 'income', 'future', 'expect', 'retirement')	109_employment_and_income
+('hour', 'job', 'work', 'time', 'week')	109_employment_and_income
+('hour', 'job', 'work', 'pay', 'week')	109_employment_and_income
+('charity', 'volunteer', 'organisation', 'help', 'give')	109_employment_and_income
+('ff_bentype01', 'accord', 'record', 'past', 'check')	109_employment_and_income
+('arrangement', 'need', 'working', 'follow', 'workplace')	109_employment_and_income
+('home', 'distancing', 'workplace', 'like', 'measure')	109_employment_and_income
+('self', 'tell', 'government', 'employ', 'support')	109_employment_and_income
+('hour', 'work', 'day', 'think', 'compare')	109_employment_and_income
+('arrange', 'basis', 'time', '-', 'finish')	109_employment_and_income
+('ask', 'include', 'credit', 'owe', 'balance')	109_employment_and_income
+('job', 'thing', 'describe', 'number', 'consider')	109_employment_and_income
+('property', 'house', 'mortgage', 'owner', 'take')	109_employment_and_income
+('statement', 'scheme', 'describe', 'employer', 'card')	109_employment_and_income
+('household', 'use', 'think', 'bank', 'food')	109_employment_and_income
+('connect', 'future', 'education', 'take', 'week')	109_employment_and_income
+('qualification', 'lead', 'training', 'credit', 'education')	109_employment_and_income
+('date', 'grade', 'promote', 'employer', 'change')	109_employment_and_income
+('end', 'payment', 'type', 'credit', 'holiday(s')	109_employment_and_income
+('month', 'follow', 'benefit', 'total', 'receive')	109_employment_and_income
+('hour', 'include', 'time', 'education', 'study')	109_employment_and_income
+('deal', 'earn', 'following', 'household')	109_employment_and_income
+('get', 'coronavirus', 'reason', 'day')	109_employment_and_income
+('bank', 'ask', 'holiday', 'mortgage')	109_employment_and_income
+('hour', 'take', 'think', 'day')	109_employment_and_income
+('date', 'month', 'end', 'job')	109_employment_and_income
+('work', 'pay', 'interview', 'time')	109_employment_and_income
+('date', 'day', 'end', 'job')	109_employment_and_income
+('date', 'stop', 'day', 'enter')	109_employment_and_income
+('date', 'year', 'end', 'job')	109_employment_and_income
+('industry', 'look', 'type', 'job')	109_employment_and_income
+('manage', 'save', 'pound', 'week')	109_employment_and_income
+('step', 'find', 'take', 'work')	109_employment_and_income
+('pound', 'change', 'debt', 'week')	109_employment_and_income
+('employee', 'supervise', 'duty', 'job')	109_employment_and_income
+('retire', 'check', 'year', 'month')	109_employment_and_income
+('charity', 'month', 'organisation', 'money')	109_employment_and_income
+('people', 'work', 'employ', 'place')	109_employment_and_income
+('education', 'skill', 'training', 'improve')	109_employment_and_income
+('following', 'furlough', 'apply', 'tell')	109_employment_and_income
+('industry', 'start', 'year', 'work')	109_employment_and_income
+('role', 'start', 'work', 'month')	109_employment_and_income
+('industry', 'start', 'work', 'month')	109_employment_and_income
+('home', 'work', 'week')	109_employment_and_income
+('employee', 'supervise', 'duty')	109_employment_and_income
+('look', 'think', 'month')	109_employment_and_income
+('indicate', 'spend', 'payment')	109_employment_and_income
+('work', 'pay', 'week')	109_employment_and_income
+('think', 'month', 'scale')	109_employment_and_income
+('rent', 'holiday', 'reduction')	109_employment_and_income
+('date', 'stop', 'year')	109_employment_and_income
+('self', 'employ', 'job')	109_employment_and_income
+('workplace', 'work', 'job')	109_employment_and_income
+('describe', 'follow', 'money')	109_employment_and_income
+('date', 'stop', 'month')	109_employment_and_income
+('receive', 'follow', 'benefit')	109_employment_and_income
+('home', 'spend', 'include')	109_employment_and_income
+('job', 'mean', 'scale')	109_employment_and_income
+('pension', 'include', 'contribute')	109_employment_and_income
+('people', 'pay', 'negotiate')	109_employment_and_income
+('industry', 'start', 'work')	109_employment_and_income
+('employer', 'start', 'work')	109_employment_and_income
+('aim', 'training', 'education')	109_employment_and_income
+('start', 'overpayment', 'mortgage')	109_employment_and_income
+('start', 'work', 'role')	109_employment_and_income
+('receive', 'year', 'advance')	109_employment_and_income
+('total', 'owe', 'pound')	109_employment_and_income
+('owe', 'money', 'week')	109_employment_and_income
+('school', 'receive', 'meal')	109_employment_and_income
+('receive', 'help')	109_employment_and_income
+('home', 'work')	109_employment_and_income
+('manage', 'day')	109_employment_and_income
+('interview', 'time')	109_employment_and_income
+('employer', 'work')	109_employment_and_income
+('work', 'job')	109_employment_and_income
+('end', 'period')	109_employment_and_income
+('way', 'work')	109_employment_and_income
+('receive', 'change')	109_employment_and_income
+('influence', 'work')	109_employment_and_income
+('scheme', 'join')	109_employment_and_income
+('day', 'time')	109_employment_and_income
+('influence', 'task')	109_employment_and_income
+('pay', 'relate')	109_employment_and_income
+('hour', 'reason')	109_employment_and_income
+('voucher', 'meal')	109_employment_and_income
+('survey', 'complete')	109_employment_and_income
+('household', 'income')	109_employment_and_income
+('know', 'event', 'let', 'follow', 'happen')	110_expectations,_attitudes_and_beliefs
+('find', 'follow', 'think', 'occupation', 'want')	110_expectations,_attitudes_and_beliefs
+('job', 'follow', 'think', 'occupation', 'want')	110_expectations,_attitudes_and_beliefs
+('age', 'child', 'write', 'like', 'want')	110_expectations,_attitudes_and_beliefs
+('future', 'provide', 'life', 'space', 'like')	110_expectations,_attitudes_and_beliefs
+('mean', 'scale', 'think', 'people', 'live')	110_expectations,_attitudes_and_beliefs
+('allow', 'come', 'think', 'people', 'live')	110_expectations,_attitudes_and_beliefs
+('contract', 'covid-19', 'view', 'month')	110_expectations,_attitudes_and_beliefs
+('like', 'leave', 'age', 'home')	110_expectations,_attitudes_and_beliefs
+('want', 'write', 'marry', 'age')	110_expectations,_attitudes_and_beliefs
+('instal', 'consider', 'electricity')	110_expectations,_attitudes_and_beliefs
+('service', 'meeting', 'week')	110_expectations,_attitudes_and_beliefs
+('covid-19', 'view')	110_expectations,_attitudes_and_beliefs
+('point', 'recycling')	110_expectations,_attitudes_and_beliefs
+('day', 'month', 'leave', 'paternity', 'period')	111_child_development
+('stop', 'breastfeed', 'code', 'child', 'unit')	111_child_development
+('date', 'child', 'born', 'expect', 'week')	111_child_development
+('night', 'process', 'time', 'child', 'settle')	111_child_development
+('hour', 'cry', 'child', 'fuss', 'period')	111_child_development
+('sentence', 'response', 'thing', 'child', 'word')	111_child_development
+('nursery', 'toddler', 'child', 'group', 'week')	111_child_development
+('assistance', 'response', 'thing', 'child')	111_child_development
+('leave', 'maternity', 'paternity', 'period')	111_child_development
+('child', 'night', 'wake', 'time')	111_child_development
+('response', 'thing', 'game', 'child')	111_child_development
+('response', 'thing', 'child', 'call')	111_child_development
+('response', 'thing', 'paper', 'child')	111_child_development
+('response', 'thing', 'child')	111_child_development
+('born', 'weigh', 'child')	111_child_development
+('time', 'breastfeed', 'child')	111_child_development
+('lbs', 'record', 'birthweight')	111_child_development
+('stop', 'breastfeed', 'child')	111_child_development
+('weigh', 'kg', 'child')	111_child_development
+('record', 'birthweight')	111_child_development
+('born', 'child')	111_child_development
+('child', 'week')	111_child_development
+('stop', 'breastfeed')	111_child_development
+('ask', 'year', 'life', 'happen')	112_life_events
+('cigarette', 'smoke', 'day', 'month', 'pregnancy')	114_pregnancy
+('end', 'tell', 'pregnancy', 'number', 'card')	114_pregnancy
+('birth', 'delivery', 'time', 'pregnancy', 'interview')	114_pregnancy
+('receive', 'form', 'fertility', 'treatment')	114_pregnancy
+('triplet', 'birth', 'twin', 'pregnancy')	114_pregnancy
+('drink', 'alcohol', 'day', 'unit')	114_pregnancy
+('describe', 'drink', 'alcohol', 'pregnancy')	114_pregnancy
+('acid', 'folic', 'supplement', 'take')	114_pregnancy
+('smoke', 'include', 'pregnancy')	114_pregnancy
+('smoke', 'pregnancy', 'month')	114_pregnancy
+('receive', 'fertilisation', 'treatment')	114_pregnancy
+('year', 'month')	114_pregnancy
+('birth', 'result')	114_pregnancy
+('interview', 'pregnancy')	114_pregnancy
+('appointment', 'attend')	114_pregnancy
+('account', 'affect', 'credit', 'life', 'gift')	115_administration
+('purpose', 'record', 'like', 'information', 'address')	115_administration
+('allow', 'address', 'like', 'thank', 'week')	115_administration
+('operating', 'system', 'find', 'smartphone', 'version')	115_administration
+('confirm', 'detail', 'interview', 'like', 'give')	115_administration
+('complete', 'self', 'respondent', 'unable', 'completion')	115_administration
+('language', 'act', 'interview', 'person', 'accompany')	115_administration
+('answer', 'add', 'record', 'study', 'give')	115_administration
+('come', 'know', 'answer', 'interview', 'want')	115_administration
+('contact', 'ENTER', 'telephone', 'number', 'enter')	115_administration
+('household', 'answer', 'record', 'grid', 'number')	115_administration
+('baby', 'child', 'member', 'record', 'identifier')	115_administration
+('contact', 'like', 'change', 'help', 'thank')	115_administration
+('birth', 'boy', 'child', 'check', 'girl')	115_administration
+('ENTER', 'CONTACT', 'telephone', 'number', 'enter')	115_administration
+('-', 'mail', 'use', 'address', 'e')	115_administration
+('receive', 'like', 'invitation', 'number', 'survey')	115_administration
+('receive', 'email', 'invitation', 'address', 'like')	115_administration
+('know', 'tell', 'find', 'ff_ctrel', 'detail')	115_administration
+('amend', 'capital', 'check', 'eg', 'enter')	115_administration
+('start', 'household', 'month', 'people', 'live')	115_administration
+('conduct', 'year', 'household', 'INTERVIEW', 'interviewed')	115_administration
+('household', 'respondent', 'speak', 'translate', 'question')	115_administration
+('k', 'address', 'number', 'line', 'enter')	115_administration
+('check', 'time', 'interview', 'address', 'live')	115_administration
+('contact', 'let', 'friend', 'touch', 'address')	115_administration
+('know', 'k.', 'code', 'address', 'enter')	115_administration
+('ask', 'interview', 'change', 'question', 'happen')	115_administration
+('know', 'town', 'k.', 'address', 'enter')	115_administration
+('health', 'information', 'add', 'form', 'like')	115_administration
+('E', 'consent', 'show', 'form', 'signed')	115_administration
+('remember', 'reward', 'month', 'covid-19', 'survey')	115_administration
+('antibody', 'kit', 'covid-19', 'testing', 'send')	115_administration
+('survey', 'like', 'hoffech', 'complete')	115_administration
+('town', 'address', 'city', 'tell')	115_administration
+('influence', 'answer', 'give', 'PEOPLE')	115_administration
+('address', 'e', '-', 'mail')	115_administration
+('know', 'address', 'postcode', 'enter')	115_administration
+('INFORMANT', 'PROXY', 'household', 'code')	115_administration
+('address', 'email', 'provide', 'hold')	115_administration
+('need', 'person', 'born', 'interview')	115_administration
+('like', 'record', 'detail', 'confirm')	115_administration
+('refused', 'reason', 'r', 'self')	115_administration
+('conduct', 'language', 'record', 'questionnaire')	115_administration
+('education', 'form', 'add', 'number')	115_administration
+('come', 'household', 'live', 'release')	115_administration
+('hear', 'prison', 'happen', 'month')	115_administration
+('date', 'birth', 'dob', 'household')	115_administration
+('date', 'birth', 'sex', 'address')	115_administration
+('like', 'invitation', 'receive', 'survey')	115_administration
+('address', 'line', 'enter')	115_administration
+('number', 'street', 'enter')	115_administration
+('people', 'visit', 'nurse')	115_administration
+('address', 'number', 'tell')	115_administration
+('address', 'street', 'tell')	115_administration
+('address', 'county', 'tell')	115_administration
+('include', 'tube', 'fill')	115_administration
+('study', 'take', 'past')	115_administration
+('number', 'home', 'landline')	115_administration
+('punjabi', 'welsh', 'language')	115_administration
+('complete', 'study', 'respondent')	115_administration
+('type', 'detail', 'contact')	115_administration
+('number', 'phone', 'work')	115_administration
+('describe', 'understanding', 'question')	115_administration
+('respondent', 'biological', 'child')	115_administration
+('date', 'interview', 'enter')	115_administration
+('number', 'telephone', 'enter')	115_administration
+('contact', 'email', 'enter')	115_administration
+('number', 'telephone', 'contact')	115_administration
+('you/', 'language', 'interview')	115_administration
+('laptop', 'return', 'thank')	115_administration
+('school', 'address', 'live')	115_administration
+('flag', 'outcome', 'nhscr')	115_administration
+('number', 'detail', 'street')	115_administration
+('know', 'k.', 'enter')	115_administration
+('computer', 'question', 'answer')	115_administration
+('year', 'prison', 'pass')	115_administration
+('refusal', 'reason', 'household')	115_administration
+('basis', 'obtain', 'continue')	115_administration
+('email', 'address', 'survey')	115_administration
+('probe', 'village', 'area')	115_administration
+('address', 'check')	115_administration
+('address', 'tell')	115_administration
+('detail', 'contact')	115_administration
+('ask', 'question')	115_administration
+('conduct', 'language')	115_administration
+('proxie', 'reason')	115_administration
+('phone', 'number')	115_administration
+('present', 'PEOPLE')	115_administration
+('relationship', 'person')	115_administration
+('influenced', 'way')	115_administration
+('postcode', 'tell')	115_administration
+('proxy', 'interview')	115_administration
+('survey', 'complete')	115_administration
+('use', 'title')	115_administration
+('address', 'month')	115_administration
+('address', 'year')	115_administration
+('date', 'birth')	115_administration
+('outcome', 'code')	115_administration
+('title', 'contact')	115_administration
+('conduct', 'IVLITRANS(IVLIENG')	115_administration
+('respondent', 'code')	115_administration
+('refuse', 'reason(s')	115_administration
+('record', 'reading')	115_administration
+('number', 'code')	115_administration
+('-', 'e')	115_administration
+('contact', 'detail')	115_administration
+('time', 'interview')	115_administration
+('check', 'like')	115_administration
+('probe', 'area')	115_administration
+('number', 'telephone')	115_administration
+('grid', 'question')	115_administration
+('question', 'translate')	115_administration
+('move', 'know')	115_administration
+('know', 'enter')	115_administration
+('date', 'today')	115_administration
+('person', 'number')	115_administration
+('datum', 'give')	115_administration
+('health', 'access', 'community', 'care', 'support')	116_covid-19
+('service', 'need', 'access', 'think', 'situation')	116_covid-19
+('end', 'service', 'access', 'month', 'think')	116_covid-19
+('service', 'hospital', 'outpatient', 'access', 'clinic')	116_covid-19
+('blood', 'appointment', 'support', 'attend', 'test')	116_covid-19
+('contact', 'information', 'provide', 'place', 'people')	116_covid-19
+('contact', 'self', 'covid-19', 'trace', 'test')	116_covid-19
+('service', 'contact', 'trace', 'coronavirus', 'test')	116_covid-19
+('tell', 'affect', 'like', 'life', 'coronavirus')	116_covid-19
+('service', 'hospital', 'access', 'clinic', 'inpatient')	116_covid-19
+('autumn', 'offer', 'jab', 'flu', 'winter')	116_covid-19
+('plan(s', 'change', 'way', 'treatment')	116_covid-19
+('experience', 'attention', 'symptom', 'seek')	116_covid-19
+('jab', 'winter', 'flu', 'autumn')	116_covid-19
+('website', 'information', 'provide', 'telephone')	116_covid-19
+('need', 'service', 'access')	116_covid-19
+('class', 'attend', 'antenatal')	116_covid-19
+('invite', 'coronavirus', 'vaccination')	116_covid-19
+('coronavirus', 'vaccination', 'offer')	116_covid-19
+('vaccine', 'reason', 'take')	116_covid-19
+('wait', 'treatment')	116_covid-19
+('appointment', 'attend')	116_covid-19
+('service', 'access')	116_covid-19
+('vaccine', 'reason')	116_covid-19
+('coronavirus', 'vaccination')	116_covid-19
+('health', 'letter')	116_covid-19
+('country', 'born', 'father')	10101_place_of_birth
+('country', 'born', 'mother')	10101_place_of_birth
+('born', 'father', 'mother')	10101_place_of_birth
+('country', 'born')	10101_place_of_birth
+('born', 'county')	10101_place_of_birth
+('write', 'county')	10101_place_of_birth
+('girl', 'boy')	10102_gender
+('sex', 'code')	10102_gender
+('recorded', 'code')	10102_gender
+('come', 'father', 'country', 'meet', 'feel')	10103_ethnic_group
+('choose', 'identity', 'apply', 'card', 'consider')	10103_ethnic_group
+('mother', 'eat', 'country', 'born', 'food')	10103_ethnic_group
+('ask', 'identity', 'like', 'question', 'sense')	10103_ethnic_group
+('mother', 'father', 'country', 'born', 'sense')	10103_ethnic_group
+('city', 'region', 'come', 'meet', 'feel')	10103_ethnic_group
+('mother', 'father', 'country', 'born', 'feel')	10103_ethnic_group
+('come', 'mother', 'country', 'meet', 'feel')	10103_ethnic_group
+('father', 'eat', 'born', 'country', 'food')	10103_ethnic_group
+('home', 'language', 'child', 'speak', 'feel')	10103_ethnic_group
+('follow', 'think', 'group', 'belong')	10103_ethnic_group
+('country', 'feel', 'father', 'born')	10103_ethnic_group
+('country', 'born', 'father', 'sense')	10103_ethnic_group
+('country', 'feel', 'born', 'mother')	10103_ethnic_group
+('city', 'region', 'sense')	10103_ethnic_group
+('group', 'consider', 'belong')	10103_ethnic_group
+('eat', 'born', 'country')	10103_ethnic_group
+('feel', 'skin', 'colour')	10103_ethnic_group
+('region', 'feel', 'city')	10103_ethnic_group
+('country', 'born', 'sense')	10103_ethnic_group
+('religion', 'feel', 'card')	10103_ethnic_group
+('religion', 'bring')	10103_ethnic_group
+('country', 'feel')	10103_ethnic_group
+('come', 'group')	10103_ethnic_group
+('mean', 'group')	10103_ethnic_group
+('day', 'activity', 'speak', 'take', 'bus')	10104_language(s)_spoken
+('language', 'speak', 'mainy', 'situation')	10104_language(s)_spoken
+('conduct', 'language', 'record', 'household')	10104_language(s)_spoken
+('letter', 'read', 'document', 'write')	10104_language(s)_spoken
+('speak', 'find')	10104_language(s)_spoken
+('fill', 'form')	10104_language(s)_spoken
+('date', 'birth', 'year', 'child', 'born')	10107_age
+('date', 'birth', 'child', 'born', 'enter')	10107_age
+('date', 'birth', 'child', 'step', 'adopt')	10107_age
+('date', 'birth', 'day', 'month', 'enter')	10107_age
+('birth', 'year', 'month', 'tell')	10107_age
+('date', 'birth', 'month', 'enter')	10107_age
+('date', 'birth', 'year')	10107_age
+('date', 'birth')	10107_age
+('age', 'birthday')	10107_age
+('born', 'tell')	10107_age
+('buy', 'accommodation', 'household', 'rent', 'mortgage')	10201_housing
+('accommodation', 'household', 'let', 'like', 'question')	10201_housing
+('include', 'water', 'rent', 'rebate', 'charge')	10201_housing
+('start', 'year', 'house', 'mortgage', 'pay')	10201_housing
+('heating', 'include', 'accommodation', 'heater', 'form')	10201_housing
+('exclude', 'accommodation', 'room', 'bathroom', 'kitchen')	10201_housing
+('exclude', 'case', 'bathroom', 'kitchen', 'sublet')	10201_housing
+('reason', 'think', 'interview', 'address', 'live')	10201_housing
+('buy', 'household', 'power', 'consider', 'electricity')	10201_housing
+('owner', 'buy', 'year', 'property')	10201_housing
+('rent', 'thing', 'include', 'payment')	10201_housing
+('electric', 'bill', 'pay', 'gas')	10201_housing
+('type', 'follow', 'fuel', 'accommodation')	10201_housing
+('home', 'today', 'expect', 'sell')	10201_housing
+('rent', 'payment', 'deduct')	10201_housing
+('accommodation', 'household', 'job')	10201_housing
+('band', 'accommodation', 'run')	10201_housing
+('rent', 'accommodation', 'provide')	10201_housing
+('accommodation', 'winter', 'question')	10201_housing
+('electricity', 'pay', 'gas')	10201_housing
+('instal', 'consider', 'electricity')	10201_housing
+('cover', 'period')	10201_housing
+('own', 'room')	10201_housing
+('rent', 'accommodation')	10201_housing
+('property', 'pay')	10201_housing
+('rent', 'room')	10201_housing
+('pay', 'gas')	10201_housing
+('pay', 'electricity')	10201_housing
+('point', 'recycling')	10201_housing
+('status', 'change')	10201_housing
+('go', 'list', 'area', 'consider', 'facility')	10202_neighbourhood
+('go', 'agree', 'neighbourhood', 'disagree', 'describe')	10202_neighbourhood
+('hitting', 'fight', 'punching', 'month', 'kicking')	10202_neighbourhood
+('access', 'learn', 'food', 'shop', 'healthcare')	10202_neighbourhood
+('feel', 'area', 'walk')	10202_neighbourhood
+('neighbourhood', 'like', 'live')	10202_neighbourhood
+('worry', 'victim', 'crime')	10202_neighbourhood
+('statement', 'neighbourhood', 'people')	10202_neighbourhood
+('statement', 'neighbourhood')	10202_neighbourhood
+('attack', 'area')	10202_neighbourhood
+('accommodation', 'experience')	10202_neighbourhood
+('service', 'month')	10202_neighbourhood
+('car', 'commute', 'alternative', 'work', 'drive')	10203_travel_and_transport
+('car', 'access', 'use', 'want', 'van')	10203_travel_and_transport
+('car', 'household', 'use', 'total', 'van')	10203_travel_and_transport
+('door', 'work', 'day', 'time', 'minute')	10203_travel_and_transport
+('car', 'difficulty', 'travel', 'work', 'van')	10203_travel_and_transport
+('journey', 'trip', 'use', 'count', 'return')	10203_travel_and_transport
+('car', 'engine', 'second', 'size', 'van')	10203_travel_and_transport
+('car', 'household', 'milage', 'mile', 'drive')	10203_travel_and_transport
+('car', 'travel', 'work', 'find', 'van')	10203_travel_and_transport
+('mile', 'place', 'work', 'live')	10203_travel_and_transport
+('minute', 'usual', 'write', 'number')	10203_travel_and_transport
+('school', 'travel', 'way')	10203_travel_and_transport
+('car', 'travel', 'van')	10203_travel_and_transport
+('country', 'flight', 'month')	10203_travel_and_transport
+('buy', 'car', 'van')	10203_travel_and_transport
+('work', 'place')	10203_travel_and_transport
+('drive', 'licence')	10203_travel_and_transport
+('car', 'drive')	10203_travel_and_transport
+('car', 'van')	10203_travel_and_transport
+('create', 'difficulty')	10203_travel_and_transport
+('come', 'birth', 'year', 'country', 'live')	10205_residential_mobility
+('year', 'come', 'want', 'expect')	10205_residential_mobility
+('/', 'address', 'life', 'live')	10205_residential_mobility
+('address', 'move', 'year', 'respondent')	10205_residential_mobility
+('fifth', 'country', 'second', 'live')	10205_residential_mobility
+('come', 'age', 'live')	10205_residential_mobility
+('life', 'address', 'live')	10205_residential_mobility
+('country', 'live')	10205_residential_mobility
+('country', 'plan')	10205_residential_mobility
+('start', 'module', 'total', 'length', 'schedule')	10301_cardiovascular_system
+('consent', 'sample', 'research', 'blood', 'store')	10301_cardiovascular_system
+('site', 'sample', 'module', 'blood', 'completion')	10301_cardiovascular_system
+('second', 'reading', 'enter')	10301_cardiovascular_system
+('sample', 'blood', 'take')	10301_cardiovascular_system
+('obtain', 'blood', 'detail')	10301_cardiovascular_system
+('pressure', 'blood')	10301_cardiovascular_system
+('fit', 'check')	10301_cardiovascular_system
+('arm', 'blood')	10301_cardiovascular_system
+('detail', 'reason(s')	10301_cardiovascular_system
+('hand', 'squeeze', 'measurement', 'non')	10302_musculoskeletal_system
+('squeeze', 'measurement', 'hand')	10302_musculoskeletal_system
+('strength', 'hand', 'code')	10302_musculoskeletal_system
+('refuse', 'attempt', 'function', 'measurement', 'lung')	10303_respiratory_system
+('hour', 'inhaler', 'check', 'medication', 'breathing')	10303_respiratory_system
+('comment', 'respondent', 'note', 'test')	10303_respiratory_system
+('hospital', 'admit', 'heart')	10303_respiratory_system
+('check', 'surgery', 'chest')	10303_respiratory_system
+('reading', 'enter')	10303_respiratory_system
+('hour', 'use')	10303_respiratory_system
+('obtain', 'blow')	10303_respiratory_system
+('eye', 'surgery')	10303_respiratory_system
+('hospital', 'clinic', 'patient')	10308_hemic_and_immune_systems
+('die', 'widow', 'partner', 'year', 'month')	10314_mortality
+('year', 'happen')	10314_mortality
+('problem', 'waist', 'measurement', 'record')	10320_anthropometry
+('obtain', 'reason', 'code')	10320_anthropometry
+('cause', 'measurement', 'height')	10320_anthropometry
+('include', 'code', 'refusal')	10320_anthropometry
+('estimate', 'enter', 'height')	10320_anthropometry
+('estimate', 'pound', 'weight')	10320_anthropometry
+('measurement', 'enter')	10320_anthropometry
+('weight', 'enter')	10320_anthropometry
+('record', 'birthweight')	10320_anthropometry
+('weight', 'estimate')	10320_anthropometry
+('height', 'enter')	10320_anthropometry
+('reason', 'refusal')	10320_anthropometry
+('foot', 'respondent')	10320_anthropometry
+('obtain', 'measurement')	10320_anthropometry
+('obtain', 'measure')	10322_physical_functioning
+('problem', 'result', 'activity', 'follow', 'week')	10323_general_health
+('disability', 'impairment', 'illness', 'stand', 'period')	10323_general_health
+('come', 'answer', 'feel', 'question', 'week')	10323_general_health
+('difficulty', 'life', 'problem(s', 'area', 'disability(ie')	10323_general_health
+('limit', 'health', 'day', 'activity', 'question')	10323_general_health
+('health', 'activity', 'friend', 'interfere', 'week')	10323_general_health
+('home', 'include', 'housework', 'interfere', 'week')	10323_general_health
+('health', 'question')	10323_general_health
+('answer', 'box', 'item', 'help', 'question')	10402_personality__temperament
+('basis', 'answer', 'extent', 'child', 'month')	10402_personality__temperament
+('mean', 'apply', 'describe', 'number', 'question')	10402_personality__temperament
+('school', 'child', 'push', 'hit', 'bully')	10402_personality__temperament
+('child', 'call', 'leave', 'spread', 'story')	10402_personality__temperament
+('pupil', 'school', 'misbehave', 'cause', 'class')	10402_personality__temperament
+('trouble', 'cause', 'misbehave', 'class')	10402_personality__temperament
+('aspect', 'feel', 'describe', 'number', 'situation')	10403_wellbeing
+('agree', 'statement', 'follow', 'apply', 'disagree')	10403_wellbeing
+('aspect', 'box', 'feel', 'face', 'question')	10403_wellbeing
+('call', 'have', 'spread', 'story', 'bully')	10403_wellbeing
+('example', 'belonging', 'have', 'hit', 'bully')	10403_wellbeing
+('experience', 'answer', 'describe', 'feel', 'week')	10403_wellbeing
+('answer', 'following', 'indicate', 'like', 'sense')	10403_wellbeing
+('feel', 'thing', 'decision', 'make')	10403_wellbeing
+('experience', 'answer', 'describe', 'week')	10403_wellbeing
+('stage', 'age', 'life', 'sense')	10403_wellbeing
+('sleep', 'worry', 'lose')	10403_wellbeing
+('feel', 'overcome', 'difficulty')	10403_wellbeing
+('feel', 'thing', 'play')	10403_wellbeing
+('feel', 'thing', 'consider')	10403_wellbeing
+('activity', 'enjoy', 'day')	10403_wellbeing
+('education', 'level', 'sense')	10403_wellbeing
+('feel', 'strain')	10403_wellbeing
+('confidence', 'lose')	10403_wellbeing
+('person', 'think')	10403_wellbeing
+('problem', 'face')	10403_wellbeing
+('background', 'sense')	10403_wellbeing
+('school', 'child')	10403_wellbeing
+('family', 'sense')	10403_wellbeing
+('describe', 'feel')	10403_wellbeing
+('sense', 'gender')	10403_wellbeing
+('belief', 'sense')	10403_wellbeing
+('health', 'clinic', 'think', 'patient', 'condition')	10502_hospital_admissions
+('hospital', 'spend', 'day', 'clinic', 'patient')	10502_hospital_admissions
+('acid', 'folic', 'health', 'supplement', 'take')	10504_medications
+('drug', 'take', 'enter')	10504_medications
+('take', 'day')	10504_medications
+('drug', 'enter')	10504_medications
+('doctor', 'take')	10504_medications
+('day', 'eat', 'fruit', 'item', 'portion')	10601_diet_and_nutrition
+('away', 'day', 'eat', 'food', 'week')	10601_diet_and_nutrition
+('day', 'eat', 'crisp', 'lemonade', 'week')	10601_diet_and_nutrition
+('diet', 'try', 'weight', 'lose')	10601_diet_and_nutrition
+('play', 'aerobics', 'day', 'activity', 'week')	10602_physical_activity
+('exercise', 'cycling', 'thing', 'sport', 'box')	10602_physical_activity
+('participate', 'sport', 'activity', 'leisure', 'facility')	10602_physical_activity
+('selection', 'list', 'sport', 'say', 'month')	10602_physical_activity
+('one', 'sporting', 'month', 'activity')	10602_physical_activity
+('eat', 'engage', 'activity', 'meal', 'drive')	10603_sleep
+('counter', 'medicine', 'month', 'help', 'take')	10603_sleep
+('bed', 'day', 'habit', 'number', 'question')	10603_sleep
+('sleep', 'rate', 'quality', 'month')	10603_sleep
+('sleep', 'trouble', 'month')	10603_sleep
+('describe', 'statement', 'box', 'tick')	10604_smoking
+('cigarette', 'smoke', 'include')	10604_smoking
+('smoke', 'cigarette', 'day')	10604_smoking
+('describe', 'statement', 'select')	10604_smoking
+('smoke', 'cigarette')	10604_smoking
+('alcopop', 'bottle', 'measure', 'glass', 'week')	10605_alcohol_consumption
+('alcohol', 'drink', 'example', 'happen', 'week')	10605_alcohol_consumption
+('drink', 'alcohol', 'friend', 'week')	10605_alcohol_consumption
+('drink', 'week', 'time')	10605_alcohol_consumption
+('drink', 'include', 'day')	10605_alcohol_consumption
+('drink', 'sip')	10605_alcohol_consumption
+('drink', 'day')	10605_alcohol_consumption
+('drink', 'week')	10605_alcohol_consumption
+('cocaine', 'drug', 'include', 'speed', 'try')	10606_substance_abuse
+('glue', 'following', 'solvent', 'sniffing', 'try')	10606_substance_abuse
+('know', 'dope', 'try', 'skunk', 'hash')	10606_substance_abuse
+('hash', 'want', 'cannabis', 'think')	10606_substance_abuse
+('take', 'drug', 'time')	10606_substance_abuse
+('game', 'play')	10606_substance_abuse
+('avoid', 'person', 'try', 'risk', 'take')	10607_risk_taking
+('one', 'list', 'month', 'place', 'card')	10608_criminal_behaviour
+('break', 'property', 'year', 'damage', 'belong')	10608_criminal_behaviour
+('one', 'name', 'call', 'shout', 'insult')	10608_criminal_behaviour
+('department', 'shop', 'take', 'pay', 'store')	10608_criminal_behaviour
+('one', 'reason', 'list', 'card')	10608_criminal_behaviour
+('one', 'month', 'place')	10608_criminal_behaviour
+('one', 'reason')	10608_criminal_behaviour
+('day', 'eat', 'meal', 'live', 'evening')	10701_home_life
+('cooking', 'housework', 'laundry', 'clean', 'week')	10701_home_life
+('hour', 'dvd', 'child', 'tv', 'video')	10701_home_life
+('stop', 'partner', 'year', 'month', 'live')	10702_household_composition
+('start', 'cohabitation', 'year', 'month', 'period')	10702_household_composition
+('partner', 'household', 'check', 'spouse', 'live')	10702_household_composition
+('residence', 'time', 'university', 'hall', 'live')	10702_household_composition
+('check', 'household', 'couple', 'live')	10702_household_composition
+('check', 'partner', 'wife', 'husband')	10702_household_composition
+('step', 'child', 'adopt')	10702_household_composition
+('school', 'boarding', 'time')	10702_household_composition
+('household', 'live')	10702_household_composition
+('household', 'join')	10702_household_composition
+('year', 'live')	10702_household_composition
+('baby', 'live')	10702_household_composition
+('partnership', 'dissolve', 'year', 'month', 'divorce')	10703_marital_status
+('status', 'tell', 'year', 'month', 'change')	10703_marital_status
+('month', 'form', 'think', 'marriage', 'marry')	10703_marital_status
+('year', 'code', 'month', 'question', 'live')	10703_marital_status
+('know', 'partnership', 'couple', 'marry', 'live')	10703_marital_status
+('date', 'dissolve', 'divorce', 'give', 'live')	10703_marital_status
+('current', 'fifth', 'second', 'eigth', 'live')	10703_marital_status
+('stop', 'partner', 'year', 'month', 'live')	10703_marital_status
+('time', 'status', 'interview', 'tell')	10703_marital_status
+('start', 'year', 'live', 'month')	10703_marital_status
+('divorce', 'partnership', 'dissolve')	10703_marital_status
+('status', 'change')	10703_marital_status
+('partner', 'live')	10703_marital_status
+('moment', 'answer', 'describe', 'number', 'question')	10704_family_members_and_relations
+('door', 'time', 'think', 'take', 'live')	10704_family_members_and_relations
+('family', 'people', 'feel', 'support', 'live')	10704_family_members_and_relations
+('family', 'suppose', 'talk', 'feel', 'want')	10704_family_members_and_relations
+('home', 'sister', 'following', 'belonging', 'brother')	10704_family_members_and_relations
+('following', 'kick', 'push', 'brother', 'hit')	10704_family_members_and_relations
+('mother', 'relationship', 'father', 'step', 'rate')	10704_family_members_and_relations
+('partner', 'year', 'couple', 'month', 'live')	10704_family_members_and_relations
+('home', 'sister', 'fun', 'following', 'brother')	10704_family_members_and_relations
+('home', 'sister', 'name', 'following', 'brother')	10704_family_members_and_relations
+('home', 'mother', 'father', 'step', 'live')	10704_family_members_and_relations
+('type', 'year', 'time', 'month', 'marry')	10704_family_members_and_relations
+('know', 'relationship', 'month', 'question', 'enter')	10704_family_members_and_relations
+('include', 'partner', 'think', 'spouse', 'live')	10704_family_members_and_relations
+('choose', 'husband', 'couple', 'marry', 'live')	10704_family_members_and_relations
+('letter', 'mother', 'contact', 'email', 'telephone')	10704_family_members_and_relations
+('weekend', 'stay', 'school', 'basis', 'holiday')	10704_family_members_and_relations
+('start', 'partner', 'year', 'intend', 'live')	10704_family_members_and_relations
+('degree', 'represent', 'point', 'describe', 'consider')	10704_family_members_and_relations
+('event', 'birth', 'child', 'life', 'marriage')	10704_family_members_and_relations
+('partnership', 'future', 'partner', 'form', 'marry')	10704_family_members_and_relations
+('letter', 'contact', 'father', 'email', 'telephone')	10704_family_members_and_relations
+('contact', 'tell', 'household', 'child(ren', 'live')	10704_family_members_and_relations
+('year', 'couple', 'month', 'TYPE', 'live')	10704_family_members_and_relations
+('thing', 'matter', 'mother', 'talk')	10704_family_members_and_relations
+('quarrel', 'parent', 'mother', 'child')	10704_family_members_and_relations
+('thing', 'father', 'matter', 'talk')	10704_family_members_and_relations
+('brother', 'home', 'sister', 'live')	10704_family_members_and_relations
+('/', 'check', 'father', 'child')	10704_family_members_and_relations
+('time', 'year', 'marry', 'month')	10704_family_members_and_relations
+('describe', 'partner', 'category', 'present')	10704_family_members_and_relations
+('partner', 'decision', 'live', 'time')	10704_family_members_and_relations
+('relationship', 'household', 'live', 'child(ren')	10704_family_members_and_relations
+('person', 'marry', 'live', 'time')	10704_family_members_and_relations
+('household', 'age', 'live', 'child')	10704_family_members_and_relations
+('mother', 'relationship', 'childname', 'time')	10704_family_members_and_relations
+('year', 'couple', 'live', 'month')	10704_family_members_and_relations
+('moment', 'exclude', 'live', 'grandchild')	10704_family_members_and_relations
+('moment', 'exclude', 'live', 'grandparent')	10704_family_members_and_relations
+('/', 'father', 'child')	10704_family_members_and_relations
+('partnership', 'marry', 'time')	10704_family_members_and_relations
+('exclude', 'moment', 'live')	10704_family_members_and_relations
+('check', 'father', 'child')	10704_family_members_and_relations
+('partner', 'decision', 'live')	10704_family_members_and_relations
+('step', 'person', 'contact')	10704_family_members_and_relations
+('step', 'live', 'child')	10704_family_members_and_relations
+('household', 'parent', 'live')	10704_family_members_and_relations
+('step', 'child', 'adopt')	10704_family_members_and_relations
+('relationship', 'start', 'year')	10704_family_members_and_relations
+('partner', 'female', 'male')	10704_family_members_and_relations
+('quarrel', 'father')	10704_family_members_and_relations
+('childname', 'mother')	10704_family_members_and_relations
+('father', 'child')	10704_family_members_and_relations
+('child', 'parent')	10704_family_members_and_relations
+('think', 'mother')	10704_family_members_and_relations
+('live', 'child')	10704_family_members_and_relations
+('father', 'think')	10704_family_members_and_relations
+('father', 'mother')	10704_family_members_and_relations
+('list', 'answer', 'second', 'friend', 'apply')	10705_friends
+('kind', 'trouble', 'friend', 'talk')	10705_friends
+('site', 'web', '-')	10705_friends
+('describe', 'second', 'friend')	10705_friends
+('second', 'friend', 'meet')	10705_friends
+('friend', 'proportion')	10705_friends
+('second', 'friend')	10705_friends
+('proportion', 'friend')	10705_friends
+('girlfriend', 'boyfriend')	10705_friends
+('look', 'hour', 'school', 'child', 'week')	10706_childcare
+('look', 'arrangement', 'school', 'child', 'holiday')	10706_childcare
+('childcare', 'child', 'use', 'care', 'carry')	10706_childcare
+('arrangement', 'work', 'child', 'use', 'check')	10706_childcare
+('arrangement', 'school', 'time', 'child', 'think')	10706_childcare
+('agree', 'statement', 'extent', 'child', 'cry')	10706_childcare
+('agree', 'statement', 'extent', 'child')	10706_childcare
+('game', 'child', 'playing', 'console')	10706_childcare
+('childcare', 'arrangement', 'use')	10706_childcare
+('read', 'home', 'child')	10706_childcare
+('childcare', 'arrangement')	10706_childcare
+('look', 'provide', 'think', 'help', 'live')	10708_social_support
+('husband', 'example', 'friend', 'help', 'live')	10708_social_support
+('service', 'provide', 'person', 'help', 'live')	10708_social_support
+('age', 'basis', 'people', 'brother', 'live')	10708_social_support
+('look', 'hour', 'spend', 'thing', 'week')	10708_social_support
+('look', 'person', 'relationship', 'help')	10708_social_support
+('look', 'apply', 'tick')	10708_social_support
+('people', 'care')	10708_social_support
+('school', 'miss')	10708_social_support
+('age', 'child')	10708_social_support
+('thing', 'parent')	10708_social_support
+('hour', 'include', 'dvd', 'tv', 'video')	10709_leisure_activities
+('include', 'purpose', 'work', 'time', 'month')	10709_leisure_activities
+('list', 'include', 'purpose', 'month', 'time')	10709_leisure_activities
+('include', 'purpose', 'work', 'month', 'time')	10709_leisure_activities
+('school', 'thing', 'box', 'follow', 'class')	10709_leisure_activities
+('basis', 'activity', 'organisation', 'member', 'join')	10709_leisure_activities
+('comic_strip', 'include', 'book', 'pleasure', 'magazine')	10709_leisure_activities
+('school', 'thing', 'follow', 'class')	10709_leisure_activities
+('information', 'say', 'affair', 'news')	10709_leisure_activities
+('involve', 'way', 'follow')	10709_leisure_activities
+('month', 'organisation', 'help')	10709_leisure_activities
+('play', 'instrument')	10709_leisure_activities
+('organisation', 'member')	10709_leisure_activities
+('visit', 'friend')	10709_leisure_activities
+('give', 'homework')	10709_leisure_activities
+('affair', 'news')	10709_leisure_activities
+('way', 'follow')	10709_leisure_activities
+('hour', 'spend')	10709_leisure_activities
+('chat', 'day', 'interact', 'friend', '-')	10711_technology
+('hour', 'school', 'spend', 'game', 'day')	10711_technology
+('home', 'include', 'computer', 'game', 'use')	10711_technology
+('home', 'computer', 'work', 'use', 'course')	10711_technology
+('web', '-', 'site', 'belong')	10711_technology
+('game', 'house', 'console', '-')	10711_technology
+('internet', 'access', 'household', 'home')	10711_technology
+('computer', 'pc', 'accommodation', 'home')	10711_technology
+('connection', 'home', 'computer')	10711_technology
+('internet', 'use')	10711_technology
+('qualification', 'training', 'scheme', 'gain', 'course')	10801_qualifications
+('mother', 'type', 'qualification', 'describe', 'gain')	10801_qualifications
+('come', 'tell', 'school', 'qualification', 'list')	10801_qualifications
+('qualification', 'father', 'think', 'describe', 'gain')	10801_qualifications
+('school', 'qualification', 'obtain', 'tell')	10801_qualifications
+('check', 'gain', 'qualification')	10801_qualifications
+('school', 'qualification', 'tell')	10801_qualifications
+('qualification', 'follow')	10801_qualifications
+('qualification', 'gain')	10801_qualifications
+('college', 'university', 'leave', 'finish', 'course')	10803_further_education__higher_education
+('school', 'college', 'year', 'university', 'gap')	10803_further_education__higher_education
+('education', 'reason', 'time')	10803_further_education__higher_education
+('training', 'day', 'month', 'course', 'attend')	10804_training
+('qualification', 'training', 'scheme', 'gain', 'course')	10804_training
+('break', 'include', 'day', 'time', 'course')	10804_training
+('college', 'degree', 'think', 'employer', 'course')	10804_training
+('scheme', 'training', 'course', 'end')	10804_training
+('turn', 'training', 'work', 'month')	10804_training
+('scheme', 'training', 'course')	10804_training
+('training', 'reason')	10804_training
+('reason', 'think')	10804_training
+('repeat', 'read', 'remember', 'list', 'word')	10810_cognitive_skills
+('complete', 'assist', 'respondent', 'person', 'help')	10810_cognitive_skills
+('present', '=', 'apply', 'test')	10810_cognitive_skills
+('section', 'memory', 'concentration', 'interview')	10810_cognitive_skills
+('ask', 'answer', 'like', 'question')	10810_cognitive_skills
+('conduct', 'stopped', 'test')	10810_cognitive_skills
+('remember', 'word')	10810_cognitive_skills
+('cost', 'sell')	10810_cognitive_skills
+('number', 'enter')	10810_cognitive_skills
+('indicate', 'word')	10810_cognitive_skills
+('complete', 'respondent')	10810_cognitive_skills
+('miss', 'permission', 'lesson', 'day', 'month')	10812_school_engagement
+('term', 'time', 'homework', 'evening', 'week')	10812_school_engagement
+('hour', 'spend', 'time')	10812_school_engagement
+('college', 'time', 'education', 'like', 'finish')	10813_education_aspirations
+('gain', 'leave', 'level', 'like', 'exam')	10813_education_aspirations
+('qualification', 'like', 'complete', 'exam')	10813_education_aspirations
+('live', 'think', 'exam')	10813_education_aspirations
+('qualification', 'think', 'exam')	10813_education_aspirations
+('job', 'statement', 'thing', 'people', 'feel')	10901_occupation__employment
+('date', 'grade', 'promote', 'employer', 'change')	10901_occupation__employment
+('date', 'stop', 'job', 'work', 'enter')	10901_occupation__employment
+('exclude', 'break', 'work', 'overtime', 'meal')	10901_occupation__employment
+('employment', 'go', 'like', 'want', 'happen')	10901_occupation__employment
+('date', 'stop', 'start', 'job', 'activity')	10901_occupation__employment
+('job', 'year', 'month', 'leave', 'pay')	10901_occupation__employment
+('kind', 'government', 'scheme', 'pay', 'week')	10901_occupation__employment
+('hour', 'job', 'work', 'total', 'week')	10901_occupation__employment
+('employee', 'day', 'employ', 'pay', 'week')	10901_occupation__employment
+('job', 'education', 'leave', 'like', 'finish')	10901_occupation__employment
+('job', 'time', 'think', 'feel', 'week')	10901_occupation__employment
+('date', 'stop', 'job', 'year', 'work')	10901_occupation__employment
+('come', 'month', 'think', 'like', 'happen')	10901_occupation__employment
+('age', 'stay', 'education', 'people', 'like')	10901_occupation__employment
+('end', 'government', 'scheme', 'place', 'week')	10901_occupation__employment
+('business', 'type', 'organisation', 'firm', 'company')	10901_occupation__employment
+('hour', 'job', 'like', 'pay', 'week')	10901_occupation__employment
+('earn', 'job', 'work', 'time', 'money')	10901_occupation__employment
+('account', 'business', 'job', 'tax', 'purpose')	10901_occupation__employment
+('work', 'employ', 'place', 'people', 'number')	10901_occupation__employment
+('hope', 'start', 'work', 'time', 'child')	10901_occupation__employment
+('job', 'sort', 'describe', 'title', 'week')	10901_occupation__employment
+('job', 'education', 'leave', 'describe', 'title')	10901_occupation__employment
+('hour', 'job', 'work', 'time', 'week')	10901_occupation__employment
+('organisation', 'make', 'firm', 'ff_jbsic07', 'description')	10901_occupation__employment
+('responsibility', 'say', 'time', 'interview', 'case')	10901_occupation__employment
+('job', 'kind', 'follow', 'interview', 'assessment')	10901_occupation__employment
+('career', 'following', 'make', 'advice', 'decision')	10901_occupation__employment
+('school', 'leave', 'people', 'moment', 'like')	10901_occupation__employment
+('arrange', 'basis', 'time', '-', 'finish')	10901_occupation__employment
+('employment', 'job', 'follow', 'period', 'pay')	10901_occupation__employment
+('arrangement', 'ask', 'work', 'place', 'like')	10901_occupation__employment
+('baby', 'work', 'time', 'plan', 'return')	10901_occupation__employment
+('organisation', 'work', 'place', 'firm')	10901_occupation__employment
+('people', 'work', 'employ', 'place')	10901_occupation__employment
+('employee', 'work', 'employ', 'self')	10901_occupation__employment
+('intention', 'leave', 'circumstance', 'job')	10901_occupation__employment
+('door', 'work', 'day', 'time')	10901_occupation__employment
+('overtime', 'hour', 'work', 'week')	10901_occupation__employment
+('step', 'find', 'take', 'work')	10901_occupation__employment
+('prefer', 'return', 'work', 'time')	10901_occupation__employment
+('look', 'job', 'employ', 'month')	10901_occupation__employment
+('one', 'reason', 'turn', 'think')	10901_occupation__employment
+('describe', 'situation', 'employment')	10901_occupation__employment
+('employee', 'supervise', 'duty')	10901_occupation__employment
+('employee', 'employ', 'self')	10901_occupation__employment
+('stop', 'job', 'tell')	10901_occupation__employment
+('reason', 'work', 'week')	10901_occupation__employment
+('week', 'work', 'job')	10901_occupation__employment
+('thing', 'attract', 'job')	10901_occupation__employment
+('person', 'work', 'firm')	10901_occupation__employment
+('account', 'partnership', 'work')	10901_occupation__employment
+('kind', 'organisation', 'work')	10901_occupation__employment
+('description', 'occupation', 'job')	10901_occupation__employment
+('job', 'think', 'have')	10901_occupation__employment
+('leshst', 'start', 'period')	10901_occupation__employment
+('turn', 'promotion', 'month')	10901_occupation__employment
+('employment', 'name]/', 'pay')	10901_occupation__employment
+('turn', 'think', 'one')	10901_occupation__employment
+('time', 'job')	10901_occupation__employment
+('way', 'job')	10901_occupation__employment
+('people', 'employ')	10901_occupation__employment
+('week', 'job')	10901_occupation__employment
+('end', 'period')	10901_occupation__employment
+('way', 'work')	10901_occupation__employment
+('day', 'time')	10901_occupation__employment
+('influence', 'work')	10901_occupation__employment
+('employment', 'pay')	10901_occupation__employment
+('association', 'union')	10901_occupation__employment
+('influence', 'task')	10901_occupation__employment
+('employment', 'period')	10901_occupation__employment
+('father', 'year', 'work', 'time', 'think')	10902_social_classification
+('time', 'mother', 'job')	10902_social_classification
+('time', 'father', 'job')	10902_social_classification
+('work', 'mother')	10902_social_classification
+('hour', 'pound', 'code', 'pay', 'enter')	10903_income
+('income', 'figure', 'tax', 'deduction', 'check')	10903_income
+('deduction', 'group', 'place', 'number', 'card')	10903_income
+('pension', 'tax', 'deduction', 'due', 'pay')	10903_income
+('tax', 'union', 'deduction', 'due', 'salary')	10903_income
+('account', 'figure', 'profit', 'loss', 'period')	10903_income
+('earn', 'job', 'deduction', 'month', 'second')	10903_income
+('home', 'adoption', 'paternity', 'receive', 'pay')	10903_income
+('business', 'good', 'material', 'equipment', 'pay')	10903_income
+('hour', 'work', 'receive', 'pay', 'week')	10903_income
+('account', 'prepare', 'year', 'beginning', 'period')	10903_income
+('account', 'prepare', 'period', 'month')	10903_income
+('profit', 'loss', 'figure', 'relate')	10903_income
+('estimate', 'enter', 'hour', 'code')	10903_income
+('rate', 'hour', 'work', 'pay')	10903_income
+('receive', 'include', 'know', 'income')	10903_income
+('estimate', 'enter', 'OVERTIME', 'code')	10903_income
+('hour', 'calculate', 'pay', 'salary')	10903_income
+('year', 'account', 'prepare', 'period')	10903_income
+('total', 'tax', 'code')	10903_income
+('rate', 'overtime', 'pay')	10903_income
+('estimate', 'enter', 'code')	10903_income
+('cover', 'period')	10903_income
+('receive', 'payment')	10903_income
+('figure', 'deduction')	10903_income
+('overtime', 'pay')	10903_income
+('hour', 'pay')	10903_income
+('tax', 'code')	10903_income
+('receive', 'pay')	10903_income
+('explain', 'family', 'partner', 'follow', 'number')	10904_finances
+('investment', 'dividend', 'month', 'interest', 'receive')	10904_finances
+('ask', 'gas', 'rate', 'bill', 'electricity')	10904_finances
+('housing', 'month', 'find', 'mortgage', 'people')	10904_finances
+('half', 'proportion', 'quarter', 'receive', 'enter')	10904_finances
+('family', 'loan', 'friend', 'community', 'money')	10904_finances
+('payment', 'tell', 'cover', 'child', 'maintenance')	10904_finances
+('apply', 'number', 'bill', 'card', 'pay')	10904_finances
+('country', 'follow', 'people', 'money', 'gift')	10904_finances
+('debit', 'credit', 'loyalty', 'card', 'store')	10904_finances
+('child', 'send', 'support', 'give', 'money')	10904_finances
+('partner', 'say', 'child', 'receive', 'behalf')	10904_finances
+('age', 'child', 'send', 'support', 'live')	10904_finances
+('payment', 'hold', 'owe', 'total', 'card')	10904_finances
+('find', 'tax', 'pay', 'month')	10904_finances
+('instalment', 'property', 'mortgage', 'loan')	10904_finances
+('family', 'partner', 'repair', 'money')	10904_finances
+('ask', 'partner', 'child', 'like')	10904_finances
+('reason', 'tell', 'follow', 'receive')	10904_finances
+('look', 'year', 'think')	10904_finances
+('information', 'document', 'give')	10904_finances
+('drawdown', 'mortgage', 'loan')	10904_finances
+('wife', 'husband', 'name')	10904_finances
+('suppose', 'receive', 'partner(s')	10904_finances
+('card', 'store', 'credit')	10904_finances
+('family', 'partner', 'month')	10904_finances
+('investment', 'household', 'hold')	10904_finances
+('suppose', 'receive', 'think')	10904_finances
+('country', 'payment', 'send')	10904_finances
+('manage', 'day')	10904_finances
+('family', 'partner')	10904_finances
+('total', 'owe')	10904_finances
+('payment', 'send')	10904_finances
+('account', 'hold')	10904_finances
+('limit', 'borrowing')	10904_finances
+('expense', 'expect')	10904_finances
+('account', 'bank')	10904_finances
+('total', 'balance')	10904_finances
+('mother', 'child')	10904_finances
+('owe', 'money')	10904_finances
+('give', 'send')	10904_finances
+('come', 'property')	10904_finances
+('home', 'spend', 'household', 'food', 'week')	10906_consumption__expenditure
+('spend', '1st', 'year', 'household', 'electricity')	10906_consumption__expenditure
+('spend', '1st', 'year', 'household', 'include')	10906_consumption__expenditure
+('accommodation', 'follow', 'item', 'apply', 'number')	10906_consumption__expenditure
+('alcohol', 'household', 'licence', 'member', 'pub')	10906_consumption__expenditure
+('spend', '1st', 'year', 'household', 'oil')	10906_consumption__expenditure
+('home', 'family', 'year', 'holiday', 'week')	10906_consumption__expenditure
+('spend', 'year', 'household', 'gas')	10906_consumption__expenditure
+('charity', 'month', 'organisation', 'money')	10906_consumption__expenditure
+('replace', 'family', 'partner', 'money')	10906_consumption__expenditure
+('spend', 'year', 'household')	10906_consumption__expenditure
+('family', 'partner', 'money')	10906_consumption__expenditure
+('sport', 'child')	10906_consumption__expenditure
+('family', 'partner')	10906_consumption__expenditure
+('pension', 'scheme', 'run', 'employer', 'superannuation')	10907_pensions
+('payment', 'receive', 'type', 'check', 'card')	10907_pensions
+('pension', 'employer', 'scheme', 'belong')	10907_pensions
+('statement', 'scheme', 'describe', 'employer')	10907_pensions
+('check', 'payment', 'receive', 'type')	10907_pensions
+('pension', 'include', 'contribute')	10907_pensions
+('scheme', 'join')	10907_pensions
+('payment', 'rent', 'rebate', 'allowance', 'deduct')	10908_benefits__welfare
+('payment', 'income', 'type', 'discuss', 'receive')	10908_benefits__welfare
+('payment', 'receive', 'type', 'check', 'card')	10908_benefits__welfare
+('ask', 'benefit', 'credit', 'get', 'number')	10908_benefits__welfare
+('check', 'payment', 'receive', 'type')	10908_benefits__welfare
+('check', 'receive', 'housing', 'benefit')	10908_benefits__welfare
+('type', 'list', 'receive', 'income')	10908_benefits__welfare
+('receive', 'type', 'payment', 'list')	10908_benefits__welfare
+('receive', 'payment', 'type', 'card')	10908_benefits__welfare
+('type', 'payment', 'receive')	10908_benefits__welfare
+('receive', 'payment', 'type')	10908_benefits__welfare
+('type', 'receive', 'income')	10908_benefits__welfare
+('receive', 'include')	10908_benefits__welfare
+('environment', 'tell', 'thing', 'follow', 'question')	11001_social_attitudes
+('agree', 'statement', 'extent', 'follow', 'disagree')	11001_social_attitudes
+('environment', 'thing', 'follow', 'feel', 'question')	11001_social_attitudes
+('car', 'environment', 'thing', 'follow', 'question')	11001_social_attitudes
+('People', 'affect', 'climate', 'believe', 'change')	11001_social_attitudes
+('family', 'agree', 'life', 'disagree', 'suffer')	11001_social_attitudes
+('environment', 'thing', 'follow', 'question')	11001_social_attitudes
+('majority', 'lifestyle', 'disagree', 'agree')	11001_social_attitudes
+('wife', 'agree', 'husband', 'disagree')	11001_social_attitudes
+('describe', 'lifestyle')	11001_social_attitudes
+('go', 'agree', 'disagree', 'issue', 'series')	11002_politics
+('election', 'think', 'tomorrow', 'party', 'support')	11002_politics
+('politic', 'think', 'party', 'view', 'question')	11002_politics
+('election', 'mean', 'run', 'think', 'vote')	11002_politics
+('difference', 'scale', 'constituency', 'vote', 'party')	11002_politics
+('feel', 'mean', 'dislike', 'scale')	11002_politics
+('agree', 'statement', 'disagree', 'people')	11002_politics
+('agree', 'statement', 'disagree')	11002_politics
+('think', 'party')	11002_politics
+('party', 'vote')	11002_politics
+('supporter', 'vote')	11002_politics
+('affect', 'eat', 'apply', 'people', 'live')	11003_religion
+('religion', 'regard', 'belong')	11003_religion
+('religion', 'practise', 'consider')	11003_religion
+('life', 'belief', 'difference')	11003_religion
+('service', 'meeting', 'attend')	11003_religion
+('religion', 'bring')	11003_religion
+('religion', 'practise')	11003_religion
+('religion', 'tick')	11003_religion
+('describe', 'religion')	11003_religion
+('refuse', 'statement', 'child', 'eat', 'follow')	11101_infant_feeding
+('statement', 'appetite', 'follow', 'child')	11101_infant_feeding
+('stop', 'breastfeed')	11101_infant_feeding
+('know', 'age', 'list', 'child', 'interact')	11103_parenting
+('know', 'night', 'stay', 'month', '9.00pm')	11103_parenting
+('go', 'movie', 'activity', 'child', 'leisure')	11103_parenting
+('schooling', 'college', 'university', 'like', 'finish')	11103_parenting
+('allow', 'rule', 'set', 'child', 'help')	11103_parenting
+('child', 'vary', 'matter', 'talk', 'parent')	11103_parenting
+('complete', 'child', 'level', 'think', 'exam')	11103_parenting
+('child', 'member', 'meal', 'live', 'evening')	11103_parenting
+('school', 'come', 'parent', 'evening')	11103_parenting
+('quarrel', 'time', 'parent', 'child')	11103_parenting
+('child', 'spank', 'slap')	11103_parenting
+('help', 'homework', 'child')	11103_parenting
+('school', 'parent')	11103_parenting
+('shout', 'child')	11103_parenting
+('cuddle', 'child')	11103_parenting
+('childname', 'mother')	11103_parenting
+('age', 'consider', 'expect', 'interest', 'policy')	11201_retirement
+('family', 'friend', 'think', 'have', 'retirement')	11201_retirement
+('worry', 'disability', 'think', 'illness', 'retirement')	11201_retirement
+('time', 'community', 'think', 'have', 'retirement')	11201_retirement
+('boss', 'go', 'list', 'people', 'retirement')	11201_retirement
+('work', 'retire', 'activity', 'consider', 'pay')	11201_retirement
+('isolate', 'worry', 'think', 'feel', 'retirement')	11201_retirement
+('thing', 'provide', 'use', 'expect', 'retirement')	11201_retirement
+('worry', 'income', 'think', 'have', 'retirement')	11201_retirement
+('belong', 'scheme', 'benefit', 'receive', 'outlive')	11201_retirement
+('tell', 'thing', 'lot', 'people', 'retirement')	11201_retirement
+('age', 'job', 'retire', 'retirement', 'pay')	11201_retirement
+('activity', 'think', 'have', 'retirement', 'leisure')	11201_retirement
+('travel', 'think', 'have', 'retirement', 'chance')	11201_retirement
+('age', 'need', 'people', 'live')	11201_retirement
+('age', 'people', 'live')	11201_retirement
+('people', 'age', 'live')	11201_retirement
+('retirement', 'think')	11201_retirement
+('keep', 'home')	11201_retirement
+('end', 'pregnancy', 'month')	11402_infant_mortality

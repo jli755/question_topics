@@ -1,0 +1,172 @@
+KeyWords	topic
+('hospital', 'appointment', 'investigation', 'patient', 'consultation')	116_covid-19
+('relation', 'think', 'seek', 'advice', 'cause')	116_covid-19
+('catch', 'condition', 'illness', 'message', 'risk')	116_covid-19
+('phone', 'place', 'appointment', 'person', 'video')	116_covid-19
+('date', 'plan', 'delay', 'place', 'appointment')	116_covid-19
+('behaviour', 'appointment', 'counselling', 'therapy')	116_covid-19
+('prescribe', 'difficulty', 'obtain', 'medication')	116_covid-19
+('medication', 'time', 'take')	116_covid-19
+('appointment', 'cancel', 'delay')	116_covid-19
+('covid-19', 'vaccinate')	116_covid-19
+('type', 'medication')	116_covid-19
+('sex', 'live', 'child')	101_demographics
+('address', 'live')	101_demographics
+('country', 'live')	101_demographics
+('date', 'birth')	101_demographics
+('garage', 'count', 'bathroom', 'kitchen', 'live')	102_housing_and_local_environment
+('patio', 'roof', 'balcony', 'garden', 'yard')	102_housing_and_local_environment
+('start', 'outbreak')	102_housing_and_local_environment
+('say', 'answer', 'continue', 'amend', 'weight')	103_physical_health
+('pound', 'prefer', 'weight', 'kilogram', 'question')	103_physical_health
+('antibody', 'finger', 'blood', 'serology', 'test')	103_physical_health
+('doctor', 'disability', 'result', 'illness', 'condition')	103_physical_health
+('result', 'report', 'test', 'coronavirus', 'finding')	103_physical_health
+('activity', 'follow', 'number', 'begin', 'week')	103_physical_health
+('nasal', 'saliva', 'infection', 'swab', 'test')	103_physical_health
+('follow', 'week', 'symptom', 'experience')	103_physical_health
+('outbreak', 'health', 'month')	103_physical_health
+('weight', 'stone', 'pound')	103_physical_health
+('hospital', 'symptom')	103_physical_health
+('feel', 'thing')	103_physical_health
+('get', 'think')	103_physical_health
+('weight', 'kilogram')	103_physical_health
+('problem', 'month')	103_physical_health
+('feel', 'month')	103_physical_health
+('problem', 'follow', 'feel', 'bother', 'week')	104_mental_health_and_mental_processes
+('control', 'worry', 'follow', 'bother', 'week')	104_mental_health_and_mental_processes
+('follow', 'interest', 'bother', 'pleasure', 'week')	104_mental_health_and_mental_processes
+('feel', 'thing', 'decision', 'make')	104_mental_health_and_mental_processes
+('outbreak', 'health', 'month')	104_mental_health_and_mental_processes
+('companionship', 'feel', 'lack')	104_mental_health_and_mental_processes
+('following', 'outbreak', 'change')	104_mental_health_and_mental_processes
+('sleep', 'worry', 'lose')	104_mental_health_and_mental_processes
+('feel', 'thing', 'consider')	104_mental_health_and_mental_processes
+('activity', 'enjoy', 'day')	104_mental_health_and_mental_processes
+('feel', 'thing', 'play')	104_mental_health_and_mental_processes
+('feel', 'overcome', 'difficulty')	104_mental_health_and_mental_processes
+('feel', 'leave')	104_mental_health_and_mental_processes
+('health', 'think')	104_mental_health_and_mental_processes
+('feel', 'strain')	104_mental_health_and_mental_processes
+('confidence', 'lose')	104_mental_health_and_mental_processes
+('mean', 'life')	104_mental_health_and_mental_processes
+('person', 'think')	104_mental_health_and_mental_processes
+('problem', 'face')	104_mental_health_and_mental_processes
+('vegetable', 'day', 'eat', 'fruit', 'portion')	106_health_behaviour
+('break', 'day', 'minute', 'heart', 'week')	106_health_behaviour
+('alcohol', 'drink', 'month', 'outbreak', 'contain')	106_health_behaviour
+('hour', 'night', 'sleep', 'month', 'outbreak')	106_health_behaviour
+('cigarette', 'day', 'answer', 'continue', 'amend')	106_health_behaviour
+('stop', 'start', 'drink', 'find', 'outbreak')	106_health_behaviour
+('comply', 'mean', 'scale', 'distancing', 'guideline')	106_health_behaviour
+('cigarette', 'smoke', 'day', 'month', 'outbreak')	106_health_behaviour
+('cigarette', 'device', 'think', 'apply', 'vaping')	106_health_behaviour
+('cigarette', 'device', 'change', 'vape')	106_health_behaviour
+('sleep', 'hour', 'night', 'week')	106_health_behaviour
+('drink', 'outbreak', 'day', 'month')	106_health_behaviour
+('drink', 'alcohol', 'contain', 'week')	106_health_behaviour
+('start', 'drink', 'outbreak')	106_health_behaviour
+('drink', 'day', 'week')	106_health_behaviour
+('start', 'outbreak')	106_health_behaviour
+('risk', 'scale')	106_health_behaviour
+('statement', 'apply')	106_health_behaviour
+('activity', 'follow', 'outbreak', 'number', 'week')	107_family_and_social_networks
+('answer', 'follow', 'friend', 'community', 'question')	107_family_and_social_networks
+('adult', 'child', 'step', 'consider', 'adopt')	107_family_and_social_networks
+('dress', 'provide', 'meal', 'help', 'live')	107_family_and_social_networks
+('lockdown', 'change', 'restriction', 'argue', 'compare')	107_family_and_social_networks
+('hour', 'person', 'help', 'live', 'week')	107_family_and_social_networks
+('need', 'provide', 'person', 'help', 'live')	107_family_and_social_networks
+('need', 'outbreak', 'change', 'help', 'live')	107_family_and_social_networks
+('home', 'spend', 'day', 'total', 'week')	107_family_and_social_networks
+('move', 'outbreak', 'change', 'live', 'word')	107_family_and_social_networks
+('partner', 'mean', 'scale', 'moment', 'consider')	107_family_and_social_networks
+('day', 'friend', 'call', 'talk', 'live')	107_family_and_social_networks
+('feeling', 'need', 'listen', 'talk', 'people')	107_family_and_social_networks
+('activity', 'community', 'group', 'neighbourhood', 'medium')	107_family_and_social_networks
+('contact', 'day', 'email', 'friend', 'live')	107_family_and_social_networks
+('day', 'friend', 'meet', 'person', 'live')	107_family_and_social_networks
+('household', 'affect', 'day', 'people', 'help')	107_family_and_social_networks
+('outbreak', 'partner', 'start', 'live')	107_family_and_social_networks
+('hour', 'outbreak', 'help', 'week')	107_family_and_social_networks
+('receive', 'hour', 'help', 'week')	107_family_and_social_networks
+('change', 'outbreak', 'help', 'compare')	107_family_and_social_networks
+('need', 'help', 'provide', 'week')	107_family_and_social_networks
+('people', 'help', 'bed', 'count')	107_family_and_social_networks
+('following', 'outbreak', 'occur')	107_family_and_social_networks
+('people', 'change', 'live')	107_family_and_social_networks
+('people', 'include', 'live')	107_family_and_social_networks
+('school', 'attend', 'child(ren')	107_family_and_social_networks
+('live', 'child')	107_family_and_social_networks
+('relationship', 'moment')	107_family_and_social_networks
+('help', 'provide')	107_family_and_social_networks
+('need', 'help')	107_family_and_social_networks
+('summer', 'school', 'day', 'person', 'attend')	108_education
+('agree', 'mean', 'extent', 'scale', 'disagree')	108_education
+('college', 'box', 'write', 'organisation', 'study')	108_education
+('term', 'summer', 'school', 'college', 'think')	108_education
+('app', 'learn', 'book', 'website', 'tutoring')	108_education
+('college', 'day', 'person', 'attend', 'week')	108_education
+('activity', 'follow', 'number', 'begin', 'week')	108_education
+('term', 'school', 'college', 'child')	108_education
+('term', 'school', 'college', 'enrol')	108_education
+('term', 'year', 'summer')	108_education
+('school', 'type', 'go')	108_education
+('college', 'training', 'centre')	108_education
+('affect', 'think', 'progress')	108_education
+('term', 'following', 'apply')	108_education
+('duration', 'course')	108_education
+('study', 'time')	108_education
+('qualification', 'level')	108_education
+('year', 'course')	108_education
+('age', 'apply')	108_education
+('hour', 'day', 'activity', 'follow', 'week')	109_employment_and_income
+('job', 'pension', 'deduction', 'due', 'pay')	109_employment_and_income
+('home', 'income', 'deduction', 'benefit', 'earning')	109_employment_and_income
+('break', 'include', 'work', 'meal', 'week')	109_employment_and_income
+('example', 'good', 'following', 'help', 'pay')	109_employment_and_income
+('answer', 'continue', 'describe', 'check', 'give')	109_employment_and_income
+('bonus', 'know', 'include', 'refund', 'commission')	109_employment_and_income
+('hour', 'answer', 'continue', 'amend', 'week')	109_employment_and_income
+('adult', 'child', 'outbreak', 'law', 'help')	109_employment_and_income
+('include', 'law', 'help', 'parent', 'grandparent')	109_employment_and_income
+('work', 'location', 'follow', 'outbreak', 'describe')	109_employment_and_income
+('worker', 'response', 'partner', 'work', 'classify')	109_employment_and_income
+('agree', 'mean', 'work', 'scale', 'disagree')	109_employment_and_income
+('spend', 'time', 'activity', 'outbreak', 'describe')	109_employment_and_income
+('partner', 'month', 'following', 'outbreak', 'receive')	109_employment_and_income
+('result', 'say', 'following', 'outbreak', 'compare')	109_employment_and_income
+('detail', 'firm', 'describe', 'distribution', 'manufacturing')	109_employment_and_income
+('month', 'outbreak', 'expect', 'situation', 'compare')	109_employment_and_income
+('worker', 'classify', 'response', 'work')	109_employment_and_income
+('situation', 'feel', 'outbreak', 'compare')	109_employment_and_income
+('household', 'outbreak', 'food', 'begin')	109_employment_and_income
+('contract', 'partner', 'hour', 'job')	109_employment_and_income
+('manage', 'outbreak', 'month')	109_employment_and_income
+('describe', 'job', 'word')	109_employment_and_income
+('organisation', 'work', 'firm')	109_employment_and_income
+('partner', 'following', 'claim')	109_employment_and_income
+('partner', 'title', 'job')	109_employment_and_income
+('describe', 'situation', 'outbreak')	109_employment_and_income
+('contract', 'hour', 'job')	109_employment_and_income
+('outbreak', 'help', 'compare')	109_employment_and_income
+('thing', 'consider', 'job')	109_employment_and_income
+('following', 'outbreak')	109_employment_and_income
+('describe', 'situation')	109_employment_and_income
+('describe', 'outbreak')	109_employment_and_income
+('organisation', 'firm')	109_employment_and_income
+('title', 'job')	109_employment_and_income
+('outbreak', 'change')	109_employment_and_income
+"('mean', 'scale', ""'"", 'trust', 'trusting')"	110_expectations,_attitudes_and_beliefs
+('agree', 'statement', 'follow', 'disagree')	110_expectations,_attitudes_and_beliefs
+('following', 'outbreak', 'trust', 'change')	110_expectations,_attitudes_and_beliefs
+('event', 'month', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
+('event', 'partner', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
+('family', 'event', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
+('event', 'difficulty', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
+('event', 'injure', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
+('event', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
+('contact', 'email', 'hold', 'use', 'address')	115_administration
+('future', 'contact', 'email', 'use', 'address')	115_administration
+('allow', 'app', 'collect', 'covid-19', 'risk')	115_administration
+('ask', 'survey')	115_administration
