@@ -1,4 +1,4 @@
-KeyWords	topic
+KeyWords	Topic
 ('age', 'household', 'people', 'help', 'live')	101_demographics
 ('date', 'need', 'birth', 'person', 'survey')	101_demographics
 ('come', 'spend', 'time', 'country', 'live')	101_demographics
@@ -101,7 +101,6 @@ KeyWords	topic
 ('household', 'eat', 'think', 'food', 'week')	106_health_behaviour
 ('household', 'time', 'eat', 'think', 'week')	106_health_behaviour
 ('day', 'time', 'activity', 'total', 'week')	106_health_behaviour
-('cigarette', 'smoke', 'include', '-', 'e')	106_health_behaviour
 ('access', 'household', 'meal', 'food', 'week')	106_health_behaviour
 ('alcohol', 'drink', 'week', 'think', 'contain')	106_health_behaviour
 ('activity', 'aerobics', 'bicycling', 'lifting', 'week')	106_health_behaviour
@@ -113,14 +112,15 @@ KeyWords	topic
 ('apple', 'day', 'eat', 'fruit', 'portion')	106_health_behaviour
 ('day', 'eat', 'breakfast', 'question', 'week')	106_health_behaviour
 ('type', 'milk', 'use', 'tell')	106_health_behaviour
-('e', '-', 'use', 'cigarette')	106_health_behaviour
 ('eat', 'type', 'bread')	106_health_behaviour
+('smoke', 'include', 'cigarette')	106_health_behaviour
 ('drink', 'take', 'week')	106_health_behaviour
 ('sleep', 'trouble', 'month')	106_health_behaviour
-('week', 'minute', 'walk')	106_health_behaviour
 ('sleep', 'school', 'time')	106_health_behaviour
+('use', 'cigarette')	106_health_behaviour
 ('drink', 'day')	106_health_behaviour
 ('day', 'week')	106_health_behaviour
+('minute', 'walk')	106_health_behaviour
 ('fall', 'week')	106_health_behaviour
 ('sleep', 'month')	106_health_behaviour
 ('household', 'think', 'count', 'people', 'live')	107_family_and_social_networks
@@ -151,7 +151,7 @@ KeyWords	topic
 ('time', 'quarrel', 'month', 'child', 'parent')	107_family_and_social_networks
 ('chat', 'example', 'friend', 'engage', 'live')	107_family_and_social_networks
 ('tell', 'disability', 'illness', 'condition', 'nature')	107_family_and_social_networks
-('app', 'interact', '-', 'friend', 'week')	107_family_and_social_networks
+('chat', 'app', 'interact', 'friend', 'week')	107_family_and_social_networks
 ('child', 'month', 'matter', 'talk', 'parent')	107_family_and_social_networks
 ('discuss', 'terminate', 'separation', 'divorce', 'consider')	107_family_and_social_networks
 ('contact', 'email', 'telephone', 'daughter', 'son')	107_family_and_social_networks
@@ -233,7 +233,6 @@ KeyWords	topic
 ('lesson', 'provide', 'time', 'meeting', 'live')	108_education
 ('age', 'college', 'child', 'enrol', 'parent')	108_education
 ('hour', 'term', 'spend', 'time', 'homework')	108_education
-('tell', 'school', 'information', 'child', 'use')	108_education
 ('day', 'time', 'homework', 'evening', 'week')	108_education
 ('school', 'thing', 'following', 'feel', 'attend')	108_education
 ('need', 'computer', 'work', 'laptop', 'tablet')	108_education
@@ -241,19 +240,17 @@ KeyWords	topic
 ('problem', 'health', 'need', 'disability', 'consider')	108_education
 ('complete', 'school', 'send', 'check', 'upload')	108_education
 ('home', 'school', 'work', 'think', 'week')	108_education
+('school', 'information', 'use', 'tell')	108_education
 ('end', 'education', 'period', 'time')	108_education
 ('qualification', 'gain', 'education', 'time')	108_education
 ('school', 'invite', 'attend', 'week')	108_education
-('school', 'information', 'use', 'tell')	108_education
-('school', 'state', 'fee', 'pay')	108_education
+('school', 'fee', 'pay', 'state')	108_education
 ('laptop', 'computer', 'tablet', 'work')	108_education
 ('school', 'following', 'feel', 'attend')	108_education
 ('education', 'period', 'time')	108_education
 ('school', 'attend', 'week')	108_education
 ('school', 'homework', 'set')	108_education
-('check', 'attend', 'child')	108_education
 ('home', 'homework', 'help')	108_education
-('school', 'report', 'detail')	108_education
 ('home', 'school', 'work')	108_education
 ('support', 'plan', 'authority')	108_education
 ('school', 'person', 'attend')	108_education
@@ -261,7 +258,9 @@ KeyWords	topic
 ('school', 'leave')	108_education
 ('report', 'detail')	108_education
 ('school', 'time')	108_education
+('check', 'attend')	108_education
 ('school', 'offer')	108_education
+('school', 'college')	108_education
 ('tell', 'household', 'work', 'think', 'live')	109_employment_and_income
 ('job', 'include', 'activity', 'pay', 'earning')	109_employment_and_income
 ('suggest', 'hour', 'tell', 'work', 'answer')	109_employment_and_income
@@ -303,15 +302,14 @@ KeyWords	topic
 ('hour', 'job', 'work', 'time', 'week')	109_employment_and_income
 ('hour', 'job', 'work', 'pay', 'week')	109_employment_and_income
 ('charity', 'volunteer', 'organisation', 'help', 'give')	109_employment_and_income
-('ff_bentype01', 'accord', 'record', 'past', 'check')	109_employment_and_income
+('receive', 'accord', 'record', 'past', 'check')	109_employment_and_income
 ('arrangement', 'need', 'working', 'follow', 'workplace')	109_employment_and_income
 ('home', 'distancing', 'workplace', 'like', 'measure')	109_employment_and_income
 ('self', 'tell', 'government', 'employ', 'support')	109_employment_and_income
 ('hour', 'work', 'day', 'think', 'compare')	109_employment_and_income
-('arrange', 'basis', 'time', '-', 'finish')	109_employment_and_income
+('arrange', 'basis', 'time', 'vary', 'finish')	109_employment_and_income
 ('ask', 'include', 'credit', 'owe', 'balance')	109_employment_and_income
 ('job', 'thing', 'describe', 'number', 'consider')	109_employment_and_income
-('property', 'house', 'mortgage', 'owner', 'take')	109_employment_and_income
 ('statement', 'scheme', 'describe', 'employer', 'card')	109_employment_and_income
 ('household', 'use', 'think', 'bank', 'food')	109_employment_and_income
 ('connect', 'future', 'education', 'take', 'week')	109_employment_and_income
@@ -379,6 +377,7 @@ KeyWords	topic
 ('receive', 'change')	109_employment_and_income
 ('influence', 'work')	109_employment_and_income
 ('scheme', 'join')	109_employment_and_income
+('house', 'mortgage')	109_employment_and_income
 ('day', 'time')	109_employment_and_income
 ('influence', 'task')	109_employment_and_income
 ('pay', 'relate')	109_employment_and_income
@@ -401,28 +400,26 @@ KeyWords	topic
 ('covid-19', 'view')	110_expectations,_attitudes_and_beliefs
 ('point', 'recycling')	110_expectations,_attitudes_and_beliefs
 ('day', 'month', 'leave', 'paternity', 'period')	111_child_development
-('stop', 'breastfeed', 'code', 'child', 'unit')	111_child_development
-('date', 'child', 'born', 'expect', 'week')	111_child_development
-('night', 'process', 'time', 'child', 'settle')	111_child_development
-('hour', 'cry', 'child', 'fuss', 'period')	111_child_development
-('sentence', 'response', 'thing', 'child', 'word')	111_child_development
+('night', 'sleep', 'process', 'time', 'settle')	111_child_development
+('hour', 'yesterday', 'cry', 'fuss', 'period')	111_child_development
 ('nursery', 'toddler', 'child', 'group', 'week')	111_child_development
-('assistance', 'response', 'thing', 'child')	111_child_development
+('stop', 'breastfeed', 'unit', 'code')	111_child_development
+('date', 'born', 'expect', 'week')	111_child_development
 ('leave', 'maternity', 'paternity', 'period')	111_child_development
-('child', 'night', 'wake', 'time')	111_child_development
-('response', 'thing', 'game', 'child')	111_child_development
-('response', 'thing', 'child', 'call')	111_child_development
-('response', 'thing', 'paper', 'child')	111_child_development
-('response', 'thing', 'child')	111_child_development
-('born', 'weigh', 'child')	111_child_development
-('time', 'breastfeed', 'child')	111_child_development
+('sentence', 'response', 'thing', 'word')	111_child_development
+('assistance', 'response', 'thing')	111_child_development
 ('lbs', 'record', 'birthweight')	111_child_development
-('stop', 'breastfeed', 'child')	111_child_development
-('weigh', 'kg', 'child')	111_child_development
+('wake', 'night', 'time')	111_child_development
+('response', 'thing', 'child')	111_child_development
+('response', 'thing', 'paper')	111_child_development
+('response', 'thing', 'use')	111_child_development
 ('record', 'birthweight')	111_child_development
-('born', 'child')	111_child_development
-('child', 'week')	111_child_development
+('response', 'thing')	111_child_development
+('breastfeed', 'time')	111_child_development
 ('stop', 'breastfeed')	111_child_development
+('born', 'weigh')	111_child_development
+('thing', 'response')	111_child_development
+('weigh', 'kg')	111_child_development
 ('ask', 'year', 'life', 'happen')	112_life_events
 ('cigarette', 'smoke', 'day', 'month', 'pregnancy')	114_pregnancy
 ('end', 'tell', 'pregnancy', 'number', 'card')	114_pregnancy
@@ -452,41 +449,36 @@ KeyWords	topic
 ('household', 'answer', 'record', 'grid', 'number')	115_administration
 ('baby', 'child', 'member', 'record', 'identifier')	115_administration
 ('contact', 'like', 'change', 'help', 'thank')	115_administration
-('birth', 'boy', 'child', 'check', 'girl')	115_administration
 ('ENTER', 'CONTACT', 'telephone', 'number', 'enter')	115_administration
-('-', 'mail', 'use', 'address', 'e')	115_administration
+('contact', 'need', 'mail', 'use', 'address')	115_administration
 ('receive', 'like', 'invitation', 'number', 'survey')	115_administration
 ('receive', 'email', 'invitation', 'address', 'like')	115_administration
-('know', 'tell', 'find', 'ff_ctrel', 'detail')	115_administration
+('know', 'tell', 'year', 'find', 'detail')	115_administration
 ('amend', 'capital', 'check', 'eg', 'enter')	115_administration
 ('start', 'household', 'month', 'people', 'live')	115_administration
 ('conduct', 'year', 'household', 'INTERVIEW', 'interviewed')	115_administration
 ('household', 'respondent', 'speak', 'translate', 'question')	115_administration
-('k', 'address', 'number', 'line', 'enter')	115_administration
+('know', 'address', 'number', 'line', 'enter')	115_administration
 ('check', 'time', 'interview', 'address', 'live')	115_administration
 ('contact', 'let', 'friend', 'touch', 'address')	115_administration
 ('know', 'k.', 'code', 'address', 'enter')	115_administration
 ('ask', 'interview', 'change', 'question', 'happen')	115_administration
 ('know', 'town', 'k.', 'address', 'enter')	115_administration
 ('health', 'information', 'add', 'form', 'like')	115_administration
-('E', 'consent', 'show', 'form', 'signed')	115_administration
+('date', 'consent', 'show', 'form', 'signed')	115_administration
 ('remember', 'reward', 'month', 'covid-19', 'survey')	115_administration
 ('antibody', 'kit', 'covid-19', 'testing', 'send')	115_administration
 ('survey', 'like', 'hoffech', 'complete')	115_administration
 ('town', 'address', 'city', 'tell')	115_administration
 ('influence', 'answer', 'give', 'PEOPLE')	115_administration
-('address', 'e', '-', 'mail')	115_administration
 ('know', 'address', 'postcode', 'enter')	115_administration
+('you/', 'like', 'language', 'interview')	115_administration
 ('INFORMANT', 'PROXY', 'household', 'code')	115_administration
 ('address', 'email', 'provide', 'hold')	115_administration
 ('need', 'person', 'born', 'interview')	115_administration
 ('like', 'record', 'detail', 'confirm')	115_administration
-('refused', 'reason', 'r', 'self')	115_administration
 ('conduct', 'language', 'record', 'questionnaire')	115_administration
-('education', 'form', 'add', 'number')	115_administration
 ('come', 'household', 'live', 'release')	115_administration
-('hear', 'prison', 'happen', 'month')	115_administration
-('date', 'birth', 'dob', 'household')	115_administration
 ('date', 'birth', 'sex', 'address')	115_administration
 ('like', 'invitation', 'receive', 'survey')	115_administration
 ('address', 'line', 'enter')	115_administration
@@ -504,18 +496,18 @@ KeyWords	topic
 ('number', 'phone', 'work')	115_administration
 ('describe', 'understanding', 'question')	115_administration
 ('respondent', 'biological', 'child')	115_administration
+('date', 'check', 'birth')	115_administration
 ('date', 'interview', 'enter')	115_administration
 ('number', 'telephone', 'enter')	115_administration
 ('contact', 'email', 'enter')	115_administration
 ('number', 'telephone', 'contact')	115_administration
-('you/', 'language', 'interview')	115_administration
 ('laptop', 'return', 'thank')	115_administration
 ('school', 'address', 'live')	115_administration
-('flag', 'outcome', 'nhscr')	115_administration
+('refused', 'reason', 'self')	115_administration
 ('number', 'detail', 'street')	115_administration
 ('know', 'k.', 'enter')	115_administration
+('education', 'form', 'add')	115_administration
 ('computer', 'question', 'answer')	115_administration
-('year', 'prison', 'pass')	115_administration
 ('refusal', 'reason', 'household')	115_administration
 ('basis', 'obtain', 'continue')	115_administration
 ('email', 'address', 'survey')	115_administration
@@ -527,6 +519,8 @@ KeyWords	topic
 ('conduct', 'language')	115_administration
 ('proxie', 'reason')	115_administration
 ('phone', 'number')	115_administration
+('date', 'birth')	115_administration
+('address', 'mail')	115_administration
 ('present', 'PEOPLE')	115_administration
 ('relationship', 'person')	115_administration
 ('influenced', 'way')	115_administration
@@ -536,26 +530,28 @@ KeyWords	topic
 ('use', 'title')	115_administration
 ('address', 'month')	115_administration
 ('address', 'year')	115_administration
-('date', 'birth')	115_administration
 ('outcome', 'code')	115_administration
 ('title', 'contact')	115_administration
 ('conduct', 'IVLITRANS(IVLIENG')	115_administration
 ('respondent', 'code')	115_administration
+('flag', 'outcome')	115_administration
 ('refuse', 'reason(s')	115_administration
 ('record', 'reading')	115_administration
 ('number', 'code')	115_administration
-('-', 'e')	115_administration
 ('contact', 'detail')	115_administration
 ('time', 'interview')	115_administration
 ('check', 'like')	115_administration
+('telephone', 'number')	115_administration
+('prison', 'pass')	115_administration
 ('probe', 'area')	115_administration
 ('number', 'telephone')	115_administration
 ('grid', 'question')	115_administration
 ('question', 'translate')	115_administration
 ('move', 'know')	115_administration
 ('know', 'enter')	115_administration
+('address', 'household')	115_administration
 ('date', 'today')	115_administration
-('person', 'number')	115_administration
+('prison', 'happen')	115_administration
 ('datum', 'give')	115_administration
 ('health', 'access', 'community', 'care', 'support')	116_covid-19
 ('service', 'need', 'access', 'think', 'situation')	116_covid-19
@@ -582,7 +578,6 @@ KeyWords	topic
 ('service', 'access')	116_covid-19
 ('vaccine', 'reason')	116_covid-19
 ('coronavirus', 'vaccination')	116_covid-19
-('health', 'letter')	116_covid-19
 ('country', 'born', 'father')	10101_place_of_birth
 ('country', 'born', 'mother')	10101_place_of_birth
 ('born', 'father', 'mother')	10101_place_of_birth
@@ -591,7 +586,6 @@ KeyWords	topic
 ('write', 'county')	10101_place_of_birth
 ('girl', 'boy')	10102_gender
 ('sex', 'code')	10102_gender
-('recorded', 'code')	10102_gender
 ('come', 'father', 'country', 'meet', 'feel')	10103_ethnic_group
 ('choose', 'identity', 'apply', 'card', 'consider')	10103_ethnic_group
 ('mother', 'eat', 'country', 'born', 'food')	10103_ethnic_group
@@ -616,7 +610,7 @@ KeyWords	topic
 ('religion', 'bring')	10103_ethnic_group
 ('country', 'feel')	10103_ethnic_group
 ('come', 'group')	10103_ethnic_group
-('mean', 'group')	10103_ethnic_group
+('mean', 'scale')	10103_ethnic_group
 ('day', 'activity', 'speak', 'take', 'bus')	10104_language(s)_spoken
 ('language', 'speak', 'mainy', 'situation')	10104_language(s)_spoken
 ('conduct', 'language', 'record', 'household')	10104_language(s)_spoken
@@ -681,11 +675,11 @@ KeyWords	topic
 ('door', 'work', 'day', 'time', 'minute')	10203_travel_and_transport
 ('car', 'difficulty', 'travel', 'work', 'van')	10203_travel_and_transport
 ('journey', 'trip', 'use', 'count', 'return')	10203_travel_and_transport
-('car', 'engine', 'second', 'size', 'van')	10203_travel_and_transport
 ('car', 'household', 'milage', 'mile', 'drive')	10203_travel_and_transport
 ('car', 'travel', 'work', 'find', 'van')	10203_travel_and_transport
 ('mile', 'place', 'work', 'live')	10203_travel_and_transport
 ('minute', 'usual', 'write', 'number')	10203_travel_and_transport
+('car', 'size', 'van', 'engine')	10203_travel_and_transport
 ('school', 'travel', 'way')	10203_travel_and_transport
 ('car', 'travel', 'van')	10203_travel_and_transport
 ('country', 'flight', 'month')	10203_travel_and_transport
@@ -697,24 +691,21 @@ KeyWords	topic
 ('create', 'difficulty')	10203_travel_and_transport
 ('come', 'birth', 'year', 'country', 'live')	10205_residential_mobility
 ('year', 'come', 'want', 'expect')	10205_residential_mobility
-('/', 'address', 'life', 'live')	10205_residential_mobility
 ('address', 'move', 'year', 'respondent')	10205_residential_mobility
-('fifth', 'country', 'second', 'live')	10205_residential_mobility
-('come', 'age', 'live')	10205_residential_mobility
 ('life', 'address', 'live')	10205_residential_mobility
+('country', 'come', 'live')	10205_residential_mobility
+('country', 'birth', 'live')	10205_residential_mobility
 ('country', 'live')	10205_residential_mobility
 ('country', 'plan')	10205_residential_mobility
-('start', 'module', 'total', 'length', 'schedule')	10301_cardiovascular_system
 ('consent', 'sample', 'research', 'blood', 'store')	10301_cardiovascular_system
 ('site', 'sample', 'module', 'blood', 'completion')	10301_cardiovascular_system
-('second', 'reading', 'enter')	10301_cardiovascular_system
 ('sample', 'blood', 'take')	10301_cardiovascular_system
 ('obtain', 'blood', 'detail')	10301_cardiovascular_system
+('reading', 'enter')	10301_cardiovascular_system
 ('pressure', 'blood')	10301_cardiovascular_system
 ('fit', 'check')	10301_cardiovascular_system
 ('arm', 'blood')	10301_cardiovascular_system
-('detail', 'reason(s')	10301_cardiovascular_system
-('hand', 'squeeze', 'measurement', 'non')	10302_musculoskeletal_system
+('sample', 'blood')	10301_cardiovascular_system
 ('squeeze', 'measurement', 'hand')	10302_musculoskeletal_system
 ('strength', 'hand', 'code')	10302_musculoskeletal_system
 ('refuse', 'attempt', 'function', 'measurement', 'lung')	10303_respiratory_system
@@ -727,7 +718,7 @@ KeyWords	topic
 ('obtain', 'blow')	10303_respiratory_system
 ('eye', 'surgery')	10303_respiratory_system
 ('hospital', 'clinic', 'patient')	10308_hemic_and_immune_systems
-('die', 'widow', 'partner', 'year', 'month')	10314_mortality
+('year', 'code', 'month')	10314_mortality
 ('year', 'happen')	10314_mortality
 ('problem', 'waist', 'measurement', 'record')	10320_anthropometry
 ('obtain', 'reason', 'code')	10320_anthropometry
@@ -742,7 +733,6 @@ KeyWords	topic
 ('height', 'enter')	10320_anthropometry
 ('reason', 'refusal')	10320_anthropometry
 ('foot', 'respondent')	10320_anthropometry
-('obtain', 'measurement')	10320_anthropometry
 ('obtain', 'measure')	10322_physical_functioning
 ('problem', 'result', 'activity', 'follow', 'week')	10323_general_health
 ('disability', 'impairment', 'illness', 'stand', 'period')	10323_general_health
@@ -753,7 +743,7 @@ KeyWords	topic
 ('home', 'include', 'housework', 'interfere', 'week')	10323_general_health
 ('health', 'question')	10323_general_health
 ('answer', 'box', 'item', 'help', 'question')	10402_personality__temperament
-('basis', 'answer', 'extent', 'child', 'month')	10402_personality__temperament
+('behaviour', 'basis', 'month', 'extent', 'answer')	10402_personality__temperament
 ('mean', 'apply', 'describe', 'number', 'question')	10402_personality__temperament
 ('school', 'child', 'push', 'hit', 'bully')	10402_personality__temperament
 ('child', 'call', 'leave', 'spread', 'story')	10402_personality__temperament
@@ -780,7 +770,6 @@ KeyWords	topic
 ('person', 'think')	10403_wellbeing
 ('problem', 'face')	10403_wellbeing
 ('background', 'sense')	10403_wellbeing
-('school', 'child')	10403_wellbeing
 ('family', 'sense')	10403_wellbeing
 ('describe', 'feel')	10403_wellbeing
 ('sense', 'gender')	10403_wellbeing
@@ -788,10 +777,8 @@ KeyWords	topic
 ('health', 'clinic', 'think', 'patient', 'condition')	10502_hospital_admissions
 ('hospital', 'spend', 'day', 'clinic', 'patient')	10502_hospital_admissions
 ('acid', 'folic', 'health', 'supplement', 'take')	10504_medications
-('drug', 'take', 'enter')	10504_medications
+('prescribe', 'medicine', 'take')	10504_medications
 ('take', 'day')	10504_medications
-('drug', 'enter')	10504_medications
-('doctor', 'take')	10504_medications
 ('day', 'eat', 'fruit', 'item', 'portion')	10601_diet_and_nutrition
 ('away', 'day', 'eat', 'food', 'week')	10601_diet_and_nutrition
 ('day', 'eat', 'crisp', 'lemonade', 'week')	10601_diet_and_nutrition
@@ -799,15 +786,14 @@ KeyWords	topic
 ('play', 'aerobics', 'day', 'activity', 'week')	10602_physical_activity
 ('exercise', 'cycling', 'thing', 'sport', 'box')	10602_physical_activity
 ('participate', 'sport', 'activity', 'leisure', 'facility')	10602_physical_activity
-('selection', 'list', 'sport', 'say', 'month')	10602_physical_activity
 ('one', 'sporting', 'month', 'activity')	10602_physical_activity
+('sport', 'say', 'month')	10602_physical_activity
 ('eat', 'engage', 'activity', 'meal', 'drive')	10603_sleep
 ('counter', 'medicine', 'month', 'help', 'take')	10603_sleep
 ('bed', 'day', 'habit', 'number', 'question')	10603_sleep
 ('sleep', 'rate', 'quality', 'month')	10603_sleep
 ('sleep', 'trouble', 'month')	10603_sleep
 ('describe', 'statement', 'box', 'tick')	10604_smoking
-('cigarette', 'smoke', 'include')	10604_smoking
 ('smoke', 'cigarette', 'day')	10604_smoking
 ('describe', 'statement', 'select')	10604_smoking
 ('smoke', 'cigarette')	10604_smoking
@@ -835,30 +821,32 @@ KeyWords	topic
 ('one', 'reason')	10608_criminal_behaviour
 ('day', 'eat', 'meal', 'live', 'evening')	10701_home_life
 ('cooking', 'housework', 'laundry', 'clean', 'week')	10701_home_life
-('hour', 'dvd', 'child', 'tv', 'video')	10701_home_life
+('hour', 'include', 'dvd', 'tv', 'video')	10701_home_life
 ('stop', 'partner', 'year', 'month', 'live')	10702_household_composition
 ('start', 'cohabitation', 'year', 'month', 'period')	10702_household_composition
-('partner', 'household', 'check', 'spouse', 'live')	10702_household_composition
 ('residence', 'time', 'university', 'hall', 'live')	10702_household_composition
+('partner', 'household', 'check', 'spouse', 'live')	10702_household_composition
 ('check', 'household', 'couple', 'live')	10702_household_composition
 ('check', 'partner', 'wife', 'husband')	10702_household_composition
 ('step', 'child', 'adopt')	10702_household_composition
 ('school', 'boarding', 'time')	10702_household_composition
+('check', 'household', 'live')	10702_household_composition
 ('household', 'live')	10702_household_composition
 ('household', 'join')	10702_household_composition
 ('year', 'live')	10702_household_composition
 ('baby', 'live')	10702_household_composition
-('partnership', 'dissolve', 'year', 'month', 'divorce')	10703_marital_status
 ('status', 'tell', 'year', 'month', 'change')	10703_marital_status
-('month', 'form', 'think', 'marriage', 'marry')	10703_marital_status
+('dissolve', 'annulment', 'year', 'month', 'divorce')	10703_marital_status
 ('year', 'code', 'month', 'question', 'live')	10703_marital_status
-('know', 'partnership', 'couple', 'marry', 'live')	10703_marital_status
 ('date', 'dissolve', 'divorce', 'give', 'live')	10703_marital_status
-('current', 'fifth', 'second', 'eigth', 'live')	10703_marital_status
-('stop', 'partner', 'year', 'month', 'live')	10703_marital_status
+('partner', 'month', 'code', 'question', 'live')	10703_marital_status
+('couple', 'get', 'people', 'marry', 'live')	10703_marital_status
 ('time', 'status', 'interview', 'tell')	10703_marital_status
 ('start', 'year', 'live', 'month')	10703_marital_status
+('partner', 'year', 'month', 'live')	10703_marital_status
 ('divorce', 'partnership', 'dissolve')	10703_marital_status
+('year', 'code', 'month')	10703_marital_status
+('year', 'think', 'month')	10703_marital_status
 ('status', 'change')	10703_marital_status
 ('partner', 'live')	10703_marital_status
 ('moment', 'answer', 'describe', 'number', 'question')	10704_family_members_and_relations
@@ -889,21 +877,17 @@ KeyWords	topic
 ('quarrel', 'parent', 'mother', 'child')	10704_family_members_and_relations
 ('thing', 'father', 'matter', 'talk')	10704_family_members_and_relations
 ('brother', 'home', 'sister', 'live')	10704_family_members_and_relations
-('/', 'check', 'father', 'child')	10704_family_members_and_relations
 ('time', 'year', 'marry', 'month')	10704_family_members_and_relations
 ('describe', 'partner', 'category', 'present')	10704_family_members_and_relations
 ('partner', 'decision', 'live', 'time')	10704_family_members_and_relations
 ('relationship', 'household', 'live', 'child(ren')	10704_family_members_and_relations
 ('person', 'marry', 'live', 'time')	10704_family_members_and_relations
 ('household', 'age', 'live', 'child')	10704_family_members_and_relations
-('mother', 'relationship', 'childname', 'time')	10704_family_members_and_relations
 ('year', 'couple', 'live', 'month')	10704_family_members_and_relations
 ('moment', 'exclude', 'live', 'grandchild')	10704_family_members_and_relations
 ('moment', 'exclude', 'live', 'grandparent')	10704_family_members_and_relations
-('/', 'father', 'child')	10704_family_members_and_relations
 ('partnership', 'marry', 'time')	10704_family_members_and_relations
 ('exclude', 'moment', 'live')	10704_family_members_and_relations
-('check', 'father', 'child')	10704_family_members_and_relations
 ('partner', 'decision', 'live')	10704_family_members_and_relations
 ('step', 'person', 'contact')	10704_family_members_and_relations
 ('step', 'live', 'child')	10704_family_members_and_relations
@@ -911,34 +895,31 @@ KeyWords	topic
 ('step', 'child', 'adopt')	10704_family_members_and_relations
 ('relationship', 'start', 'year')	10704_family_members_and_relations
 ('partner', 'female', 'male')	10704_family_members_and_relations
+('check', 'child')	10704_family_members_and_relations
 ('quarrel', 'father')	10704_family_members_and_relations
-('childname', 'mother')	10704_family_members_and_relations
-('father', 'child')	10704_family_members_and_relations
 ('child', 'parent')	10704_family_members_and_relations
 ('think', 'mother')	10704_family_members_and_relations
 ('live', 'child')	10704_family_members_and_relations
 ('father', 'think')	10704_family_members_and_relations
-('father', 'mother')	10704_family_members_and_relations
-('list', 'answer', 'second', 'friend', 'apply')	10705_friends
+('relationship', 'time')	10704_family_members_and_relations
 ('kind', 'trouble', 'friend', 'talk')	10705_friends
-('site', 'web', '-')	10705_friends
-('describe', 'second', 'friend')	10705_friends
-('second', 'friend', 'meet')	10705_friends
+('list', 'answer', 'friend', 'apply')	10705_friends
 ('friend', 'proportion')	10705_friends
-('second', 'friend')	10705_friends
+('describe', 'friend')	10705_friends
 ('proportion', 'friend')	10705_friends
 ('girlfriend', 'boyfriend')	10705_friends
-('look', 'hour', 'school', 'child', 'week')	10706_childcare
-('look', 'arrangement', 'school', 'child', 'holiday')	10706_childcare
+('hour', 'term', 'school', 'time', 'week')	10706_childcare
+('look', 'term', 'arrangement', 'school', 'time')	10706_childcare
 ('childcare', 'child', 'use', 'care', 'carry')	10706_childcare
 ('arrangement', 'work', 'child', 'use', 'check')	10706_childcare
-('arrangement', 'school', 'time', 'child', 'think')	10706_childcare
-('agree', 'statement', 'extent', 'child', 'cry')	10706_childcare
-('agree', 'statement', 'extent', 'child')	10706_childcare
-('game', 'child', 'playing', 'console')	10706_childcare
+('hour', 'school', 'spend', 'holiday', 'week')	10706_childcare
+('agree', 'statement', 'extent', 'follow', 'cry')	10706_childcare
+('agree', 'statement', 'extent', 'follow')	10706_childcare
+('school', 'look', 'holiday', 'arrangement')	10706_childcare
 ('childcare', 'arrangement', 'use')	10706_childcare
-('read', 'home', 'child')	10706_childcare
+('game', 'playing', 'console')	10706_childcare
 ('childcare', 'arrangement')	10706_childcare
+('read', 'home')	10706_childcare
 ('look', 'provide', 'think', 'help', 'live')	10708_social_support
 ('husband', 'example', 'friend', 'help', 'live')	10708_social_support
 ('service', 'provide', 'person', 'help', 'live')	10708_social_support
@@ -952,8 +933,8 @@ KeyWords	topic
 ('thing', 'parent')	10708_social_support
 ('hour', 'include', 'dvd', 'tv', 'video')	10709_leisure_activities
 ('include', 'purpose', 'work', 'time', 'month')	10709_leisure_activities
-('list', 'include', 'purpose', 'month', 'time')	10709_leisure_activities
 ('include', 'purpose', 'work', 'month', 'time')	10709_leisure_activities
+('include', 'month', 'time', 'work', 'think')	10709_leisure_activities
 ('school', 'thing', 'box', 'follow', 'class')	10709_leisure_activities
 ('basis', 'activity', 'organisation', 'member', 'join')	10709_leisure_activities
 ('comic_strip', 'include', 'book', 'pleasure', 'magazine')	10709_leisure_activities
@@ -968,14 +949,14 @@ KeyWords	topic
 ('affair', 'news')	10709_leisure_activities
 ('way', 'follow')	10709_leisure_activities
 ('hour', 'spend')	10709_leisure_activities
-('chat', 'day', 'interact', 'friend', '-')	10711_technology
+('chat', 'hour', 'day', 'interact', 'friend')	10711_technology
 ('hour', 'school', 'spend', 'game', 'day')	10711_technology
 ('home', 'include', 'computer', 'game', 'use')	10711_technology
 ('home', 'computer', 'work', 'use', 'course')	10711_technology
-('web', '-', 'site', 'belong')	10711_technology
-('game', 'house', 'console', '-')	10711_technology
 ('internet', 'access', 'household', 'home')	10711_technology
 ('computer', 'pc', 'accommodation', 'home')	10711_technology
+('web', 'site', 'belong')	10711_technology
+('game', 'house', 'console')	10711_technology
 ('connection', 'home', 'computer')	10711_technology
 ('internet', 'use')	10711_technology
 ('qualification', 'training', 'scheme', 'gain', 'course')	10801_qualifications
@@ -1001,9 +982,9 @@ KeyWords	topic
 ('reason', 'think')	10804_training
 ('repeat', 'read', 'remember', 'list', 'word')	10810_cognitive_skills
 ('complete', 'assist', 'respondent', 'person', 'help')	10810_cognitive_skills
-('present', '=', 'apply', 'test')	10810_cognitive_skills
 ('section', 'memory', 'concentration', 'interview')	10810_cognitive_skills
 ('ask', 'answer', 'like', 'question')	10810_cognitive_skills
+('present', 'apply', 'test')	10810_cognitive_skills
 ('conduct', 'stopped', 'test')	10810_cognitive_skills
 ('remember', 'word')	10810_cognitive_skills
 ('cost', 'sell')	10810_cognitive_skills
@@ -1020,16 +1001,17 @@ KeyWords	topic
 ('qualification', 'think', 'exam')	10813_education_aspirations
 ('job', 'statement', 'thing', 'people', 'feel')	10901_occupation__employment
 ('date', 'grade', 'promote', 'employer', 'change')	10901_occupation__employment
-('date', 'stop', 'job', 'work', 'enter')	10901_occupation__employment
 ('exclude', 'break', 'work', 'overtime', 'meal')	10901_occupation__employment
 ('employment', 'go', 'like', 'want', 'happen')	10901_occupation__employment
-('date', 'stop', 'start', 'job', 'activity')	10901_occupation__employment
+('date', 'stop', 'job', 'day', 'enter')	10901_occupation__employment
 ('job', 'year', 'month', 'leave', 'pay')	10901_occupation__employment
 ('kind', 'government', 'scheme', 'pay', 'week')	10901_occupation__employment
 ('hour', 'job', 'work', 'total', 'week')	10901_occupation__employment
 ('employee', 'day', 'employ', 'pay', 'week')	10901_occupation__employment
 ('job', 'education', 'leave', 'like', 'finish')	10901_occupation__employment
+('date', 'stop', 'job', 'work', 'month')	10901_occupation__employment
 ('job', 'time', 'think', 'feel', 'week')	10901_occupation__employment
+('date', 'stop', 'start', 'job', 'activity')	10901_occupation__employment
 ('date', 'stop', 'job', 'year', 'work')	10901_occupation__employment
 ('come', 'month', 'think', 'like', 'happen')	10901_occupation__employment
 ('age', 'stay', 'education', 'people', 'like')	10901_occupation__employment
@@ -1039,28 +1021,27 @@ KeyWords	topic
 ('earn', 'job', 'work', 'time', 'money')	10901_occupation__employment
 ('account', 'business', 'job', 'tax', 'purpose')	10901_occupation__employment
 ('work', 'employ', 'place', 'people', 'number')	10901_occupation__employment
-('hope', 'start', 'work', 'time', 'child')	10901_occupation__employment
 ('job', 'sort', 'describe', 'title', 'week')	10901_occupation__employment
 ('job', 'education', 'leave', 'describe', 'title')	10901_occupation__employment
 ('hour', 'job', 'work', 'time', 'week')	10901_occupation__employment
-('organisation', 'make', 'firm', 'ff_jbsic07', 'description')	10901_occupation__employment
+('work', 'organisation', 'make', 'firm', 'description')	10901_occupation__employment
 ('responsibility', 'say', 'time', 'interview', 'case')	10901_occupation__employment
 ('job', 'kind', 'follow', 'interview', 'assessment')	10901_occupation__employment
 ('career', 'following', 'make', 'advice', 'decision')	10901_occupation__employment
 ('school', 'leave', 'people', 'moment', 'like')	10901_occupation__employment
-('arrange', 'basis', 'time', '-', 'finish')	10901_occupation__employment
+('arrange', 'basis', 'time', 'vary', 'finish')	10901_occupation__employment
 ('employment', 'job', 'follow', 'period', 'pay')	10901_occupation__employment
 ('arrangement', 'ask', 'work', 'place', 'like')	10901_occupation__employment
 ('baby', 'work', 'time', 'plan', 'return')	10901_occupation__employment
 ('organisation', 'work', 'place', 'firm')	10901_occupation__employment
-('people', 'work', 'employ', 'place')	10901_occupation__employment
 ('employee', 'work', 'employ', 'self')	10901_occupation__employment
+('people', 'work', 'employ', 'place')	10901_occupation__employment
 ('intention', 'leave', 'circumstance', 'job')	10901_occupation__employment
 ('door', 'work', 'day', 'time')	10901_occupation__employment
 ('overtime', 'hour', 'work', 'week')	10901_occupation__employment
 ('step', 'find', 'take', 'work')	10901_occupation__employment
+('hope', 'start', 'work', 'time')	10901_occupation__employment
 ('prefer', 'return', 'work', 'time')	10901_occupation__employment
-('look', 'job', 'employ', 'month')	10901_occupation__employment
 ('one', 'reason', 'turn', 'think')	10901_occupation__employment
 ('describe', 'situation', 'employment')	10901_occupation__employment
 ('employee', 'supervise', 'duty')	10901_occupation__employment
@@ -1074,19 +1055,19 @@ KeyWords	topic
 ('kind', 'organisation', 'work')	10901_occupation__employment
 ('description', 'occupation', 'job')	10901_occupation__employment
 ('job', 'think', 'have')	10901_occupation__employment
-('leshst', 'start', 'period')	10901_occupation__employment
+('look', 'job', 'month')	10901_occupation__employment
 ('turn', 'promotion', 'month')	10901_occupation__employment
-('employment', 'name]/', 'pay')	10901_occupation__employment
 ('turn', 'think', 'one')	10901_occupation__employment
 ('time', 'job')	10901_occupation__employment
 ('way', 'job')	10901_occupation__employment
 ('people', 'employ')	10901_occupation__employment
+('employment', 'pay')	10901_occupation__employment
 ('week', 'job')	10901_occupation__employment
 ('end', 'period')	10901_occupation__employment
 ('way', 'work')	10901_occupation__employment
 ('day', 'time')	10901_occupation__employment
+('start', 'period')	10901_occupation__employment
 ('influence', 'work')	10901_occupation__employment
-('employment', 'pay')	10901_occupation__employment
 ('association', 'union')	10901_occupation__employment
 ('influence', 'task')	10901_occupation__employment
 ('employment', 'period')	10901_occupation__employment
@@ -1128,7 +1109,6 @@ KeyWords	topic
 ('ask', 'gas', 'rate', 'bill', 'electricity')	10904_finances
 ('housing', 'month', 'find', 'mortgage', 'people')	10904_finances
 ('half', 'proportion', 'quarter', 'receive', 'enter')	10904_finances
-('family', 'loan', 'friend', 'community', 'money')	10904_finances
 ('payment', 'tell', 'cover', 'child', 'maintenance')	10904_finances
 ('apply', 'number', 'bill', 'card', 'pay')	10904_finances
 ('country', 'follow', 'people', 'money', 'gift')	10904_finances
@@ -1136,6 +1116,7 @@ KeyWords	topic
 ('child', 'send', 'support', 'give', 'money')	10904_finances
 ('partner', 'say', 'child', 'receive', 'behalf')	10904_finances
 ('age', 'child', 'send', 'support', 'live')	10904_finances
+('family', 'loan', 'friend', 'community', 'money')	10904_finances
 ('payment', 'hold', 'owe', 'total', 'card')	10904_finances
 ('find', 'tax', 'pay', 'month')	10904_finances
 ('instalment', 'property', 'mortgage', 'loan')	10904_finances
@@ -1161,8 +1142,7 @@ KeyWords	topic
 ('expense', 'expect')	10904_finances
 ('account', 'bank')	10904_finances
 ('total', 'balance')	10904_finances
-('mother', 'child')	10904_finances
-('owe', 'money')	10904_finances
+('month', 'money')	10904_finances
 ('give', 'send')	10904_finances
 ('come', 'property')	10904_finances
 ('home', 'spend', 'household', 'food', 'week')	10906_consumption__expenditure
@@ -1180,21 +1160,21 @@ KeyWords	topic
 ('sport', 'child')	10906_consumption__expenditure
 ('family', 'partner')	10906_consumption__expenditure
 ('pension', 'scheme', 'run', 'employer', 'superannuation')	10907_pensions
-('payment', 'receive', 'type', 'check', 'card')	10907_pensions
 ('pension', 'employer', 'scheme', 'belong')	10907_pensions
 ('statement', 'scheme', 'describe', 'employer')	10907_pensions
 ('check', 'payment', 'receive', 'type')	10907_pensions
 ('pension', 'include', 'contribute')	10907_pensions
+('payment', 'type', 'card')	10907_pensions
 ('scheme', 'join')	10907_pensions
 ('payment', 'rent', 'rebate', 'allowance', 'deduct')	10908_benefits__welfare
 ('payment', 'income', 'type', 'discuss', 'receive')	10908_benefits__welfare
 ('payment', 'receive', 'type', 'check', 'card')	10908_benefits__welfare
 ('ask', 'benefit', 'credit', 'get', 'number')	10908_benefits__welfare
 ('check', 'payment', 'receive', 'type')	10908_benefits__welfare
+('receive', 'payment', 'type', 'card')	10908_benefits__welfare
 ('check', 'receive', 'housing', 'benefit')	10908_benefits__welfare
 ('type', 'list', 'receive', 'income')	10908_benefits__welfare
 ('receive', 'type', 'payment', 'list')	10908_benefits__welfare
-('receive', 'payment', 'type', 'card')	10908_benefits__welfare
 ('type', 'payment', 'receive')	10908_benefits__welfare
 ('receive', 'payment', 'type')	10908_benefits__welfare
 ('type', 'receive', 'income')	10908_benefits__welfare
@@ -1219,7 +1199,6 @@ KeyWords	topic
 ('agree', 'statement', 'disagree')	11002_politics
 ('think', 'party')	11002_politics
 ('party', 'vote')	11002_politics
-('supporter', 'vote')	11002_politics
 ('affect', 'eat', 'apply', 'people', 'live')	11003_religion
 ('religion', 'regard', 'belong')	11003_religion
 ('religion', 'practise', 'consider')	11003_religion
@@ -1229,25 +1208,23 @@ KeyWords	topic
 ('religion', 'practise')	11003_religion
 ('religion', 'tick')	11003_religion
 ('describe', 'religion')	11003_religion
-('refuse', 'statement', 'child', 'eat', 'follow')	11101_infant_feeding
-('statement', 'appetite', 'follow', 'child')	11101_infant_feeding
+('eat', 'statement', 'refuse', 'follow')	11101_infant_feeding
+('statement', 'appetite', 'follow')	11101_infant_feeding
 ('stop', 'breastfeed')	11101_infant_feeding
 ('know', 'age', 'list', 'child', 'interact')	11103_parenting
 ('know', 'night', 'stay', 'month', '9.00pm')	11103_parenting
-('go', 'movie', 'activity', 'child', 'leisure')	11103_parenting
+('go', 'movie', 'park', 'activity', 'leisure')	11103_parenting
 ('schooling', 'college', 'university', 'like', 'finish')	11103_parenting
-('allow', 'rule', 'set', 'child', 'help')	11103_parenting
 ('child', 'vary', 'matter', 'talk', 'parent')	11103_parenting
-('complete', 'child', 'level', 'think', 'exam')	11103_parenting
-('child', 'member', 'meal', 'live', 'evening')	11103_parenting
+('day', 'eat', 'meal', 'live', 'evening')	11103_parenting
 ('school', 'come', 'parent', 'evening')	11103_parenting
 ('quarrel', 'time', 'parent', 'child')	11103_parenting
-('child', 'spank', 'slap')	11103_parenting
-('help', 'homework', 'child')	11103_parenting
+('allow', 'rule', 'set')	11103_parenting
+('complete', 'think', 'exam')	11103_parenting
 ('school', 'parent')	11103_parenting
-('shout', 'child')	11103_parenting
-('cuddle', 'child')	11103_parenting
-('childname', 'mother')	11103_parenting
+('spank', 'slap')	11103_parenting
+('help', 'homework')	11103_parenting
+('hug', 'cuddle')	11103_parenting
 ('age', 'consider', 'expect', 'interest', 'policy')	11201_retirement
 ('family', 'friend', 'think', 'have', 'retirement')	11201_retirement
 ('worry', 'disability', 'think', 'illness', 'retirement')	11201_retirement

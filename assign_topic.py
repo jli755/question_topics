@@ -41,13 +41,24 @@ def check_is_subset(list_b, list_a):
     return is_subset
 
 
+def check_same_list(list_a, list_b):
+    """
+    Check if two lists contain the same elements
+    Order Does Not Matter
+    """
+    # Convert to sets 
+    result = set(list_a) == set(list_b)
+    return result
+
+
 def assign_topic(input_key, topic_dict):
     """
     if the key of topic_dict is a subset of input_key, then return value of topic_dict[key]
     """
     v = None
     for key in topic_dict.keys():
-        if check_is_subset(key, input_key):
+        # exactly the same key words
+        if check_same_list(key, input_key):
             # print(key)
             v = topic_dict[key]
     return v
@@ -55,7 +66,7 @@ def assign_topic(input_key, topic_dict):
 
 def main():
     
-    df = pd.read_csv('NextSteps_question.csv', sep='\t')
+    df = pd.read_csv('input_questions/NextSteps_question.csv', sep='\t')
 
     # make sure QuestionGroupName is interger
     df['QuestionGroupName'] = df['QuestionGroupName'].astype('Int64')
@@ -91,7 +102,7 @@ def main():
     sw_spacy = nlp.Defaults.stop_words
     #print(sw_spacy)
 
-    df['nouns_verbs_lemmas'] = df['QuestionText'].apply(lambda x: set([token.lemma_ for token in nlp(x) if token.pos_ in ['NOUN', 'VERB'] and not token.is_stop]))
+    df['nouns_verbs_lemmas'] = df['QuestionText'].apply(lambda x: set([token.lemma_ for token in nlp(x) if token.pos_ in ['NOUN', 'VERB'] and not token.is_stop and len(token) > 1]))
     df['nouns_verbs_lemmas'] = df['nouns_verbs_lemmas'].apply(lambda x: ['born' if i == 'bear' else i for i in x])
 
     # print(df.head(1).transpose())
@@ -104,9 +115,10 @@ def main():
     os.makedirs('assigned_output', exist_ok=True)
 
     # read in the existing key_topic file
-    df_key_topic = pd.read_csv('resources/KeyWord_Topic.tsv', sep='\t')
+    #df_key_topic = pd.read_csv('resources/KeyWord_Topic.tsv', sep='\t')
+    df_key_topic = pd.read_csv('resources/KeyWord_Topic_by_study/KeyWords_Topic_US.tsv', sep='\t')
 
-    df_key_topic['lemma'] = df_key_topic['key_words'].apply(lambda x: words_to_lemma(x, nlp))
+    df_key_topic['lemma'] = df_key_topic['KeyWords'].apply(lambda x: words_to_lemma(x, nlp))
     print(df_key_topic.head(1).transpose())
 
     # Convert the lists in the key column to tuples

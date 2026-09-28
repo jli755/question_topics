@@ -24,7 +24,8 @@ def rm_text_please(original_text, ignore_ls):
     """
     
     # Removes the brackets and everything inside them
-    result = re.sub(r'\{.*?\}', '', original_text)
+    rm_curling_brackets = re.sub(r'\{.*?\}', '', original_text)
+    result = re.sub(r'\[.*?\]', '', rm_curling_brackets)
 
     # Regex Approach: For better performance with many replacements, join the list into a regular expression pattern.
     pattern = "|".join(ignore_ls)
@@ -190,9 +191,9 @@ def main():
     os.makedirs('output', exist_ok=True)
 
     # input
-    #study = 'NextSteps'
+    study = 'NextSteps'
     #study = 'US'
-    study = 'MCS'
+    #study = 'MCS'
     df_input = pd.read_csv('input_questions/' + study + '_question.csv', sep='\t')
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
@@ -234,7 +235,8 @@ def main():
     #print(sw_spacy)
 
     ### TOCHECK ADD 'ADJ','PROPN' ###
-    df['nouns_verbs_lemmas'] = df['QuestionText'].apply(lambda x: set([token.lemma_ for token in nlp(x) if token.pos_ in ['NOUN', 'VERB'] and not token.is_stop]))
+    # more than one character, i.e. e-mail contains 'e', '-'
+    df['nouns_verbs_lemmas'] = df['QuestionText'].apply(lambda x: set([token.lemma_ for token in nlp(x) if token.pos_ in ['NOUN', 'VERB'] and not token.is_stop and len(token) > 1]))
     df['nouns_verbs_lemmas'] = df['nouns_verbs_lemmas'].apply(lambda x: ['born' if i == 'bear' else i for i in x])
 
     # print(df.head(1).transpose())
@@ -303,7 +305,7 @@ def main():
     #by_study_dir = 'output/KeyWords_Topic_by_study'
     # ast.literal_eval(x)
     final_df_summary['KeyWords'] = final_df_summary['words_removed_count'].apply(lambda x: next(iter(x)))
-    final_df_summary[['KeyWords', 'topic']].to_csv(os.path.join('output', 'KeyWords_Topic_' + study + '.tsv'), sep='\t', index=False)
+    final_df_summary[['KeyWords', 'topic']].to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
     
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',

@@ -1,4 +1,4 @@
-KeyWords	topic
+KeyWords	Topic
 ('hospital', 'appointment', 'investigation', 'patient', 'consultation')	116_covid-19
 ('relation', 'think', 'seek', 'advice', 'cause')	116_covid-19
 ('catch', 'condition', 'illness', 'message', 'risk')	116_covid-19
@@ -157,7 +157,8 @@ KeyWords	topic
 ('organisation', 'firm')	109_employment_and_income
 ('title', 'job')	109_employment_and_income
 ('outbreak', 'change')	109_employment_and_income
-"('mean', 'scale', ""'"", 'trust', 'trusting')"	110_expectations,_attitudes_and_beliefs
+('mean', 'party', 'place', 'trust', 'nation')	110_expectations,_attitudes_and_beliefs
+('mean', 'scale', 'people', 'trust', 'trusting')	110_expectations,_attitudes_and_beliefs
 ('agree', 'statement', 'follow', 'disagree')	110_expectations,_attitudes_and_beliefs
 ('following', 'outbreak', 'trust', 'change')	110_expectations,_attitudes_and_beliefs
 ('event', 'month', 'item', 'indicate', 'happen')	11612_life_events_(cv19)
