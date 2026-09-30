@@ -191,9 +191,11 @@ def main():
     os.makedirs('output', exist_ok=True)
 
     # input
-    study = 'NextSteps'
+    #study = 'NextSteps'
     #study = 'US'
     #study = 'MCS'
+    #study = 'BCS'
+    study = 'NCDS'
     df_input = pd.read_csv('input_questions/' + study + '_question.csv', sep='\t')
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
