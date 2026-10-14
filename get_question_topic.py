@@ -2,35 +2,12 @@
 if the combined key words appears in more than one questions then remove these questions
 """
 
-from itertools import chain, combinations
 import pandas as pd
 import spacy
 import ast
 import re
 import os
-
-
-def rm_text_please(original_text, ignore_ls):
-    """
-    remove a sentence (from ignore_ls) from a string (original_text)
-
-    orginal_text:
-        original string
-
-    ignore_ls:
-        a list
-
-    output: new_text
-    """
-    
-    # Removes the brackets and everything inside them
-    rm_curling_brackets = re.sub(r'\{.*?\}', '', original_text)
-    result = re.sub(r'\[.*?\]', '', rm_curling_brackets)
-
-    # Regex Approach: For better performance with many replacements, join the list into a regular expression pattern.
-    pattern = "|".join(ignore_ls)
-    new_text = re.sub(pattern, "", result, flags=re.IGNORECASE)
-    return new_text
+import utils
 
 
 def words_to_lemma(in_text, nlp):
@@ -49,40 +26,7 @@ def words_to_lemma(in_text, nlp):
     lemmas = ['born' if i == 'bear' else i for i in lemmas]
 
     return lemmas
-
-
-def powerset(s):
-    """
-    items contains 2 items all then way to all items
-    return all combination of a list, range(1, len(s_list) + 1)
-    note that range(0, len(s_list) + 1) will include an empty set
-    """
-    s_list = list(s) # Sets must be converted to lists for indexing
-    return list(chain.from_iterable(combinations(s_list, r) for r in range(2, len(s_list) + 1)))
-
-
-def powerset_4_5(s):
-    """
-    return n elements from combination of a list
-    contains 2 and 3 items
-    """
-    s_list = list(s) # Sets must be converted to lists for indexing
-    # this returns n words combination
-    out_list = list(chain.from_iterable(combinations(s_list, r) for r in (range(4, 6))))
-
-    return sorted(out_list)
-
-
-def powerset_n(s, n):
-    """
-    return n elements from combination of a list, (range(n,n+1))
-    """
-    s_list = list(s) # Sets must be converted to lists for indexing
-    # this returns n words combination
-    out_list = list(chain.from_iterable(combinations(s_list, r) for r in (range(n, n+1))))
-
-    return sorted(out_list)
-
+    
 
 def get_freq_key_words(df, n):
     """
@@ -94,8 +38,8 @@ def get_freq_key_words(df, n):
         df_words_freq = pd.DataFrame()
     else:
         # Convert the string back into a real Python list object
-        #df['key_words'] = df['nouns_verbs_lemmas'].apply(lambda x: powerset_4_5( x ))
-        df['key_words'] = df['nouns_verbs_lemmas'].apply(lambda x: powerset_n( x, n ))
+        #df['key_words'] = df['nouns_verbs_lemmas'].apply(lambda x: utils.powerset_4_5( x ))
+        df['key_words'] = df['nouns_verbs_lemmas'].apply(lambda x: utils.powerset_n( x, n ))
 
         # Explode the 'key_words' column
         df_words = df.explode('key_words')
@@ -117,13 +61,27 @@ def get_freq_key_words(df, n):
 
 
 def rm_questions_from_key_words(df, n):
-    """
-    given a dataframe of one topic with question text df['QuestionText']
-    find all combinations of key words
-    count frequency within the df
-     - number of elements of key words combination is more than 3
-    remove questions associated with the most freq comb
-    out put both new dataframe and the (key words), also number of questions removed
+    """Finds a keyword set that matches the most questions, and remove them.
+
+    Args:
+        df: a dataframe with a 'QuestionText' column.
+        n: The length of keyword sets to try.
+
+    From the QuestionText, extract keywords and build all combinations
+    of those keywords, for example with n = 3, this could result in
+    ("A", "B", "C"), ("A", "C", "D").
+    
+    For each keyword set, count the frequency (the number of questions
+    that match each set).  For example, ("A", "B", "C") might match 7
+    questions and ("A", "C", "D") matches 3.
+    
+    Next, we remove the questions associated with the most frequent
+    keyword set.  In the above, this means we remove the 7 questions
+    matching ("A", "B", "C").
+    
+    Returns:
+        Three dataframes.  df after remove questions, summary of what has been removed and removed questions df
+    
     """
 
     df_words_freq = get_freq_key_words(df, n)
@@ -191,11 +149,11 @@ def main():
     os.makedirs('output', exist_ok=True)
 
     # input
-    #study = 'NextSteps'
-    #study = 'US'
-    #study = 'MCS'
-    #study = 'BCS'
-    study = 'NCDS'
+    # study = 'NextSteps'
+    # study = 'US'     # us 6 items run out of memory
+    # study = 'MCS'     # MCS 6 items run out of memory
+    study = 'BCS'
+    # study = 'NCDS'
     df_input = pd.read_csv('input_questions/' + study + '_question.csv', sep='\t')
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
@@ -228,7 +186,7 @@ def main():
         ignore_ls = [line.strip() for line in file]
 
     df['QuestionTextOriginal'] = df['QuestionText']
-    df['QuestionText'] = df['QuestionTextOriginal'].apply(lambda x: rm_text_please(x, ignore_ls))
+    df['QuestionText'] = df['QuestionTextOriginal'].apply(lambda x: utils.rm_text_please(x, ignore_ls))
 
     # using spacy to remove stop words, then find lemma of NOUN/VERB
     nlp = spacy.load('en_core_web_sm')
@@ -261,7 +219,7 @@ def main():
             if df_QG_sub.empty:
                 break
 
-            #df_QG_sub['key_words'] = df_QG_sub['nouns_verbs_lemmas'].apply(lambda x: powerset_n(x, n))
+            #df_QG_sub['key_words'] = df_QG_sub['nouns_verbs_lemmas'].apply(lambda x: utils.powerset_n(x, n))
             #print(df_QG_sub.head(1).transpose())
         
             ## TODO: do until rm_questions_from_key_words returns empty df   
@@ -304,10 +262,22 @@ def main():
     final_df_summary.to_csv(os.path.join('output', 'key_words_summary_' + study + '.tsv'), sep='\t', index=False)
     
     # output keyword-topic pair 
-    #by_study_dir = 'output/KeyWords_Topic_by_study'
+    
     # ast.literal_eval(x)
     final_df_summary['KeyWords'] = final_df_summary['words_removed_count'].apply(lambda x: next(iter(x)))
-    final_df_summary[['KeyWords', 'topic']].to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
+    final_df_summary['N_questions'] = final_df_summary['byTopic']
+    
+    # check any duplicated KeyWords?
+    # Check for duplicates in the 'name' column (keeping the first)
+    duplicates = final_df_summary[final_df_summary['KeyWords'].duplicated(keep='first')]
+    print(duplicates)
+    # dict of dict, didn't work because there are duplicates
+    # Structure: {col1 -> {col2_name: val2, col3_name: val3}}
+    # first column to be the primary key, and the inner dictionary to map the remaining column names to their row values.
+    # Set the primary column as the index and export using orient='index'
+    #result = final_df_summary[['KeyWords', 'topic', 'N_questions']].set_index('KeyWords').to_dict(orient='index')
+    #result.to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
+    final_df_summary[['KeyWords', 'topic', 'N_questions']].to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
     
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
