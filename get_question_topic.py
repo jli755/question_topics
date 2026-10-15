@@ -3,7 +3,6 @@ if the combined key words appears in more than one questions then remove these q
 """
 
 import pandas as pd
-import spacy
 import ast
 import re
 import os
@@ -50,12 +49,12 @@ def get_freq_key_words(df, n):
         #df_words.to_csv('explode.csv', sep='\t')
 
         # Add a new column 'word_Count'
-        df_words['count_within_topic'] = df_words.groupby(['topic', 'key_words'])['key_words'].transform('count')
+        df_words['count_within_topic'] = df_words.groupby(['Topic', 'key_words'])['key_words'].transform('count')
         # sort by topic and count, number of items in key_words desc
-        df_words = df_words.sort_values(['topic', 'count_within_topic', 'num_elements'], ascending=[True, False, False])
+        df_words = df_words.sort_values(['Topic', 'count_within_topic', 'num_elements'], ascending=[True, False, False])
 
         # output key words count only
-        df_words_freq = df_words[['topic', 'key_words', 'count_within_topic']].drop_duplicates(keep='first')
+        df_words_freq = df_words[['Topic', 'key_words', 'count_within_topic']].drop_duplicates(keep='first')
 
     return df_words_freq
 
@@ -96,7 +95,7 @@ def rm_questions_from_key_words(df, n):
     if df_words_freq_sub.empty:
         return pd.DataFrame(), pd.DataFrame(), pd.DataFrame()
         
-    df_summary_before = df.groupby(['topic']).size().reset_index(name='before_counts')
+    df_summary_before = df.groupby(['Topic']).size().reset_index(name='before_counts')
     # print(df_summary_before)
 
     # remove questions, normally we would remove one words_to_remove for each outer iteration
@@ -118,7 +117,7 @@ def rm_questions_from_key_words(df, n):
         if not rm_df.empty:
             rm_df['removed_words'] = rm_df.apply(lambda _: words_to_remove, axis=1)
 
-        rm_topic_freq = rm_df.groupby(['topic']).size().reset_index(name='byTopic')
+        rm_topic_freq = rm_df.groupby(['Topic']).size().reset_index(name='byTopic')
         
         subset_df = df[df['key_words'].apply(lambda tags_list: words_to_remove not in tags_list)]
 
@@ -129,15 +128,15 @@ def rm_questions_from_key_words(df, n):
             #break  # Exits the loop immediately
     #df['removed'] = [list(words_to_remove) for _ in range(len(df))]
 
-    df_summary_after = df.groupby(['topic']).size().reset_index(name='after_counts')
+    df_summary_after = df.groupby(['Topic']).size().reset_index(name='after_counts')
 
     if not df_summary_after.empty and not rm_topic_freq.empty:
-        df_a = df_summary_after.merge(rm_topic_freq, how = 'left', on = 'topic')
+        df_a = df_summary_after.merge(rm_topic_freq, how = 'left', on = 'Topic')
     else:
         df_a = df_summary_after
     #print(df_a)
 
-    df_summary = pd.merge(df_summary_before, df_a, how = 'left', on='topic')
+    df_summary = pd.merge(df_summary_before, df_a, how = 'left', on='Topic')
     df_summary['words_removed_count'] = [key_words_count_dict] * len(df_summary)
     
     return subset_df, df_summary, rm_df
@@ -149,69 +148,23 @@ def main():
     os.makedirs('output', exist_ok=True)
 
     # input
-    # study = 'NextSteps'
+    study = 'NextSteps'
     # study = 'US'     # us 6 items run out of memory
     # study = 'MCS'     # MCS 6 items run out of memory
-    study = 'BCS'
+    # study = 'BCS'
     # study = 'NCDS'
     df_input = pd.read_csv('input_questions/' + study + '_question.csv', sep='\t')
-    col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
-       'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
-       'QuestionGroupName', 'QuestionGroupLabel']
-    df = df_input[col_keep]
-    # make sure they are interger
-    df['QuestionGroupName'] = df['QuestionGroupName'].astype('Int64')
-
-    # topic
-    df['topic'] = df['QuestionGroupName'].astype(str) + '_' + df['QuestionGroupLabel'].str.lower().str.replace('|', '').str.replace('/', '_').str.replace(' ', '_')
-
-
-    df['topic'] = df['topic'].replace({'11601_demographics_(cv19)': '101_demographics',
-                                       '11602_housing_and_local_environment_(cv19)': '102_housing_and_local_environment',
-                                       '11603_physical_health_(cv19)': '103_physical_health',
-                                       '11604_mental_health_and_mental_processes_(cv19)': '104_mental_health_and_mental_processes',
-                                       '11605_health_care_(cv19)': '116_covid-19',
-                                       '11606_health_behaviour_(cv19)': '106_health_behaviour',
-                                       '11607_family_and_social_networks_(cv19)': '107_family_and_social_networks',
-                                       '11608_education_(cv19)': '108_education',
-                                       '11609_employment_and_income_(cv19)': '109_employment_and_income',
-                                       '11610_expectation,_attitudes_and_beliefs_(cv19)': '110_expectations,_attitudes_and_beliefs',
-                                       '11614_pregnancy_(cv19)': '114_pregnancy',
-                                       '11615_administration_(cv19)': '115_administration',
-                                       })
-
-    # read in the ignored senteces file, put them into a list
-    ignore_file = 'resources/Ignore_Sentences.txt'
-    with open(ignore_file, 'r') as file:
-        ignore_ls = [line.strip() for line in file]
-
-    df['QuestionTextOriginal'] = df['QuestionText']
-    df['QuestionText'] = df['QuestionTextOriginal'].apply(lambda x: utils.rm_text_please(x, ignore_ls))
-
-    # using spacy to remove stop words, then find lemma of NOUN/VERB
-    nlp = spacy.load('en_core_web_sm')
-    # default stop word
-    sw_spacy = nlp.Defaults.stop_words
-    #print(sw_spacy)
-
-    ### TOCHECK ADD 'ADJ','PROPN' ###
-    # more than one character, i.e. e-mail contains 'e', '-'
-    df['nouns_verbs_lemmas'] = df['QuestionText'].apply(lambda x: set([token.lemma_ for token in nlp(x) if token.pos_ in ['NOUN', 'VERB'] and not token.is_stop and len(token) > 1]))
-    df['nouns_verbs_lemmas'] = df['nouns_verbs_lemmas'].apply(lambda x: ['born' if i == 'bear' else i for i in x])
-
-    # print(df.head(1).transpose())
-    #df_subset = df.loc[df['topic'] == '10201_housing']
-    #df_sub = df[sub_columns]
-    df_sub = df
-    #print(df_subset.head(1).transpose())
+    
+    df = utils.update_df(df_input)
+    print(df.head(1).transpose())
     
     # Initialize an empty list
     df_count_list = []
     rm_df_list = []
-    # loop through topics
-    for t in df_sub['topic'].unique():
+    # loop through Topics
+    for t in df['Topic'].unique():
         #print(t)
-        df_QG_sub = df_sub[df_sub['topic'] == t]
+        df_QG_sub = df[df['Topic'] == t]
         #print(df_QG_sub.head(1).transpose())
         
         for n in [5, 4, 3, 2]:
@@ -270,18 +223,18 @@ def main():
     # check any duplicated KeyWords?
     # Check for duplicates in the 'name' column (keeping the first)
     duplicates = final_df_summary[final_df_summary['KeyWords'].duplicated(keep='first')]
-    print(duplicates)
+    #print(duplicates)
     # dict of dict, didn't work because there are duplicates
     # Structure: {col1 -> {col2_name: val2, col3_name: val3}}
     # first column to be the primary key, and the inner dictionary to map the remaining column names to their row values.
     # Set the primary column as the index and export using orient='index'
-    #result = final_df_summary[['KeyWords', 'topic', 'N_questions']].set_index('KeyWords').to_dict(orient='index')
+    #result = final_df_summary[['KeyWords', 'Topic', 'N_questions']].set_index('KeyWords').to_dict(orient='index')
     #result.to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
-    final_df_summary[['KeyWords', 'topic', 'N_questions']].to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
+    final_df_summary[['KeyWords', 'Topic', 'N_questions']].to_csv(os.path.join('output', 'KeyWord_Topic_' + study + '.tsv'), sep='\t', index=False)
     
     col_keep = ['InstrumentURN', 'InstrumentName', 'QuestionURN', 'QuestionLabel',
        'QuestionItemName', 'QuestionText', 'QuestionGroupID', 'QuestionGroupAgency',
-       'QuestionGroupName', 'QuestionGroupLabel', 'topic', 
+       'QuestionGroupName', 'QuestionGroupLabel', 'Topic', 
        'QuestionTextOriginal', 'nouns_verbs_lemmas', 
        'removed_words']
   
@@ -294,11 +247,11 @@ def main():
     # Remove duplicate rows across all columns
     rm_df_all_clean = rm_df_all.drop_duplicates()
     
-    rm_df_all_clean[col_keep].to_csv(os.path.join('output', 'removed_all_clean.tsv'), sep='\t', index=False)
+    rm_df_all_clean[col_keep].to_csv(os.path.join('output', 'removed_all_clean_' + study + '.tsv'), sep='\t', index=False)
         
     # Filter rows where df1's column value is NOT in df2's column
     filtered_df = df[~df['QuestionURN'].isin(rm_df_all_clean['QuestionURN'])]
-    filtered_df.to_csv(os.path.join('output', 'not_removed.tsv'), sep='\t', index=False)
+    filtered_df.to_csv(os.path.join('output', 'not_removed_' + study + '.tsv'), sep='\t', index=False)
 
 if __name__ == "__main__":
     main()

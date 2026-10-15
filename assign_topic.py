@@ -11,6 +11,7 @@ import spacy
 import ast
 import re
 import os
+import utils
 
 
 def words_to_lemma(in_text, nlp):
@@ -65,58 +66,26 @@ def assign_topic(input_key, topic_dict):
 
 
 def main():
+    study = 'NextSteps'
+    print(study)
+    df_input = pd.read_csv('input_questions/' + study + '_question.csv', sep='\t')
+
+    df = utils.update_df(df_input)
+    print(df.head(1).transpose())
     
-    df = pd.read_csv('input_questions/NextSteps_question.csv', sep='\t')
-
-    # make sure QuestionGroupName is interger
-    df['QuestionGroupName'] = df['QuestionGroupName'].astype('Int64')
-
-    # topic
-    df['topic'] = df['QuestionGroupName'].astype(str) + '_' + df['QuestionGroupLabel'].str.lower().str.replace('|', '').str.replace('/', '_').str.replace(' ', '_')
-
-    df['topic'] = df['topic'].replace({'11601_demographics_(cv19)': '101_demographics',
-                                       '11602_housing_and_local_environment_(cv19)': '102_housing_and_local_environment',
-                                       '11603_physical_health_(cv19)': '103_physical_health',
-                                       '11604_mental_health_and_mental_processes_(cv19)': '104_mental_health_and_mental_processes',
-                                       '11605_health_care_(cv19)': '116_covid-19',
-                                       '11606_health_behaviour_(cv19)': '106_health_behaviour',
-                                       '11607_family_and_social_networks_(cv19)': '107_family_and_social_networks',
-                                       '11608_education_(cv19)': '108_education',
-                                       '11609_employment_and_income_(cv19)': '109_employment_and_income',
-                                       '11610_expectation,_attitudes_and_beliefs_(cv19)': '110_expectations,_attitudes_and_beliefs',
-                                       '11614_pregnancy_(cv19)': '114_pregnancy',
-                                       '11615_administration_(cv19)': '115_administration',
-                                       })
-
-    # read in the ignored senteces file, put them into a list
-    ignore_file = 'resources/Ignore_Sentences.txt'
-    with open(ignore_file, 'r') as file:
-        ignore_ls = [line.strip() for line in file]
-
-    df['QuestionTextOriginal'] = df['QuestionText']
-    df['QuestionText'] = df['QuestionTextOriginal'].apply(lambda x: rm_text_please(x, ignore_ls))
-
-    # using spacy to remove stop words, then find lemma of NOUN/VERB
-    nlp = spacy.load('en_core_web_sm')
-    # default stop word
-    sw_spacy = nlp.Defaults.stop_words
-    #print(sw_spacy)
-
-    df['nouns_verbs_lemmas'] = df['QuestionText'].apply(lambda x: set([token.lemma_ for token in nlp(x) if token.pos_ in ['NOUN', 'VERB'] and not token.is_stop and len(token) > 1]))
-    df['nouns_verbs_lemmas'] = df['nouns_verbs_lemmas'].apply(lambda x: ['born' if i == 'bear' else i for i in x])
-
-    # print(df.head(1).transpose())
-
     sub_columns = ['topic', 'QuestionLabel', 'QuestionText', 'nouns_verbs_lemmas']
-
     df_sub = df[sub_columns]
 
     # create a folder
     os.makedirs('assigned_output', exist_ok=True)
+    
+    # using spacy to remove stop words, then find lemma of NOUN/VERB
+    nlp = spacy.load('en_core_web_sm')
 
     # read in the existing key_topic file
-    #df_key_topic = pd.read_csv('resources/KeyWord_Topic.tsv', sep='\t')
-    df_key_topic = pd.read_csv('resources/KeyWord_Topic_by_study/KeyWords_Topic_US.tsv', sep='\t')
+    study_used = 'US'
+    print(study_used)
+    df_key_topic = pd.read_csv('resources/KeyWords_Topic_by_study/KeyWord_Topic_' + study_used + '.tsv', sep='\t')
 
     df_key_topic['lemma'] = df_key_topic['KeyWords'].apply(lambda x: words_to_lemma(x, nlp))
     print(df_key_topic.head(1).transpose())
@@ -144,11 +113,11 @@ def main():
     #print("top_level_same topic:")
     #print((df_assign['top_level_same'] == '1').sum() / len(df_assign))
     
-    df_assign.to_csv(os.path.join('assigned_output', 'assigned.tsv'), sep='\t', index=False)
+    df_assign.to_csv(os.path.join('assigned_output', study + '_assigned_from_' + study_used + '.tsv'), sep='\t', index=False)
 
     # remove rows that already assigned the topic
     df_new = df_sub.loc[df_sub['assign_topic'].isna(), :]
-    df_new.to_csv(os.path.join('assigned_output', 'not_assigned.tsv'), sep='\t', index=False)
+    df_new.to_csv(os.path.join('assigned_output', study + '_not_assigned_from_' + study_used + '.tsv'), sep='\t', index=False)
 
 
 if __name__ == "__main__":
